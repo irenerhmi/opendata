@@ -1,16 +1,31 @@
-@font-face {
-    font-family: "Poppins-Medium";
-    src: url("../font/Poppins-Medium.ttf");
-  }
 
 body {
-    font-family: 'Poppins-Medium', sans-serif;
-   
+    background-image: url("../image/vector.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 600px;
+    padding-left: 55px;
+    padding-right: 30px;
+}
+
+/* :::::::::::::: START NAVIGATION ::::::::::::::*/
+
+nav.navbar {
+    padding-left: 55px;
+    padding-right: 27px;
 }
 
 .navbar-brand {
-    padding-left: 24px;
     margin: 0px;
+}
+
+nav .navbar-nav li a.dropdown-item:hover {
+    color: #B0DEFF;
+    background-color: #FFFF;
+}
+
+nav .navbar-nav li {
+    padding-right: 3px;
 }
 
 nav .navbar-nav li a {
@@ -18,15 +33,116 @@ nav .navbar-nav li a {
     font-size: 16px;
 }
 
-nav .navbar-nav li a:hover {
-    color: green;
+nav .navbar-nav li a:hover, nav .navbar-nav li a:visited {
+    color: black;
 }
 
-.ayam {
-    width: 500px;
-    height: 300px;
-    z-index: -1;
-    top: 0px;
-    /*left nya blm otomatis msh berubah sesuai width layah */
-    left: 780px;
+/* :::::::::::::: END NAVIGATION ::::::::::::::*/
+
+/* :::::::::::::: START SECTION DESCRIPTION ::::::::::::::*/
+
+/*.decsription {
+    padding-top: 90px;
+    background-image: url("../image/vector2.png");
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-size: 315px;
+    background-position-y: center;
+
+}*/
+
+section.decsription {
+    margin-top: 200px;
+    margin-bottom: 50px;
 }
+
+.bg-transparent.scrolled {
+    background: #FFFF !important;
+    shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+.desc1 {
+    font-size: 27px;
+    text-align: center; 
+    color: black;
+    font-weight: 600;
+    line-height: 48px;
+
+}
+
+.desc2 {
+    font-size: 24px;
+    text-align: center; 
+    color: black;
+    padding-top: 46px;
+    padding-bottom: 35px;
+    line-height: 48px;
+    font-weight: 600;
+
+}
+
+.has-search {
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+  }
+  
+  .has-search .form-control {
+    padding-right: 2.375rem;
+    border: 2px solid #000000; 
+    border-radius: 40px;
+}
+  
+  .has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    color: #000000;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    border: 0px;
+  }
+
+  .vector2 {
+    position: absolute;
+    z-index: 999;
+    left: -1px;
+    top: 50px;
+    width: 350px;
+  }
+
+/* :::::::::::::: END SECTION DESCRIPTION ::::::::::::::*/
+
+/* :::::::::::::: START STATISTIK DESCRIPTION ::::::::::::::*/
+.statistik {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.stat {
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 39px;
+    color: #000;
+    padding-bottom: 82px;
+}
+
+.boxstat {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    width: 106px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* :::::::::::::: END STATISTIK DESCRIPTION ::::::::::::::*/
