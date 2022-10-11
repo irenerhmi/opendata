@@ -1,11 +1,17 @@
 
 body {
+    padding-left: 55px;
+    padding-right: 30px;
     background-image: url("../image/vector.png");
     background-repeat: no-repeat;
     background-position-x: right;
     background-size: 600px;
-    padding-left: 55px;
-    padding-right: 30px;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.vector {
+
 }
 
 /* :::::::::::::: START NAVIGATION ::::::::::::::*/
@@ -86,10 +92,11 @@ section.decsription {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    width: 700px;
-  }
+    padding-left: 160px;
+    padding-right: 160px;
+}
   
-  .has-search .form-control {
+.has-search .form-control {
     padding-right: 2.375rem;
     border: 2px solid #000000; 
     border-radius: 40px;
@@ -108,6 +115,7 @@ section.decsription {
     top: 0;
     background-color: transparent;
     border: 0px;
+    padding-right: 190px;
   }
 
   .vector2 {
@@ -120,7 +128,7 @@ section.decsription {
 
 /* :::::::::::::: END SECTION DESCRIPTION ::::::::::::::*/
 
-/* :::::::::::::: START STATISTIK DESCRIPTION ::::::::::::::*/
+/* :::::::::::::: START SECTION STATISTIK  ::::::::::::::*/
 .statistik {
     padding-top: 60px;
     padding-bottom: 30px;
@@ -139,10 +147,72 @@ section.decsription {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     width: 106px;
-    height: 200px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-/* :::::::::::::: END STATISTIK DESCRIPTION ::::::::::::::*/
+.boxstat .contenstat {
+    margin-top: auto;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.boxstat .contenstat img {
+    width: 68px;
+    height: 68px !important;
+}
+
+.boxstat .contenstat h2 {
+    font-style: normal;
+    font-size: 30px;
+    /* identical to box height */
+    color: #000000;
+    font-weight: 530;
+    line-height: 48px;
+    margin-bottom: 0px;
+
+}
+
+.boxstat .contenstat h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #000000;
+    margin-bottom: 0px;
+
+}
+
+/* :::::::::::::: END SECTION STATISTIK ::::::::::::::*/
+
+
+/* :::::::::::::: START SECTION HIGHLIGHT DATA ::::::::::::::*/
+
+.highlight {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.cards-wrapper {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.carousel-inner {
+    text-align: center;
+}
+
+.card {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+/* :::::::::::::: END SECTION HIGHLIGHT DATA ::::::::::::::*/
