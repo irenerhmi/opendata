@@ -218,6 +218,14 @@ section.decsription {
     font-weight: 400;
 }
 
+.klmbtn{
+    width: 750px;
+}
+
+.klmbtn .klmjam{
+    margin-right: 25px;
+}
+
 .d-flex .col{
     /* background-color: #B0DEFF; */
     font-size: 20px;
@@ -262,6 +270,7 @@ nav ul.pagination li.page-item a.page-link:hover:not(.active){
 
 /* :::::::::::::: END PAGINATION ::::::::::::::*/
 
+/* :::::::::::::: START FOOTER ::::::::::::::*/
 section.footeer{
     padding-top: 20px;
     margin-left: -55px;
@@ -321,3 +330,5 @@ section.footeer{
     width: 70px;
     height: 70px;
 }
+
+/* :::::::::::::: END FOOTER ::::::::::::::*/
