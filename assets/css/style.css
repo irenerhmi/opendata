@@ -10,14 +10,19 @@ body {
     height: 100vh;
 }
 
-.vector {
-
+@media only screen and (max-width: 600px) {
+    body {
+      background-image: none;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
 }
+
 
 /* :::::::::::::: START NAVIGATION ::::::::::::::*/
 
 nav.navbar {
-    padding-left: 55px;
+    padding-left: 35px;
     padding-right: 27px;
 }
 
@@ -45,17 +50,8 @@ nav .navbar-nav li a:hover, nav .navbar-nav li a:visited {
 
 /* :::::::::::::: END NAVIGATION ::::::::::::::*/
 
+/* ---:::::::::: DASHBOARD PAGE ::::::::::---*/
 /* :::::::::::::: START SECTION DESCRIPTION ::::::::::::::*/
-
-/*.decsription {
-    padding-top: 90px;
-    background-image: url("../image/vector2.png");
-    background-repeat: no-repeat;
-    background-position-x: left;
-    background-size: 315px;
-    background-position-y: center;
-
-}*/
 
 section.decsription {
     margin-top: 200px;
@@ -65,7 +61,7 @@ section.decsription {
 .bg-transparent.scrolled {
     background: #FFFF !important;
     shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+}
 
 .desc1 {
     font-size: 27px;
@@ -95,6 +91,14 @@ section.decsription {
     padding-left: 160px;
     padding-right: 160px;
 }
+
+@media only screen and (max-width: 600px) {
+    .has-search {
+      width: 70%;
+      padding: 0px;
+
+    }
+}
   
 .has-search .form-control {
     padding-right: 2.375rem;
@@ -102,7 +106,7 @@ section.decsription {
     border-radius: 40px;
 }
   
-  .has-search .form-control-feedback {
+.has-search .form-control-feedback {
     position: absolute;
     z-index: 2;
     display: block;
@@ -116,15 +120,29 @@ section.decsription {
     background-color: transparent;
     border: 0px;
     padding-right: 190px;
-  }
+}
 
-  .vector2 {
+@media only screen and (max-width: 600px) {
+    .has-search .form-control-feedback {
+      width: 70%;
+      padding: 0px;
+      padding-left: 50%;   
+    }
+}
+
+.vector2 {
     position: absolute;
     z-index: 999;
     left: -1px;
     top: 50px;
     width: 350px;
-  }
+}
+
+@media only screen and (max-width: 600px) {
+    .vector2 {
+      width: 50%;
+    }
+}
 
 /* :::::::::::::: END SECTION DESCRIPTION ::::::::::::::*/
 
@@ -139,7 +157,7 @@ section.decsription {
     font-size: 27px;
     line-height: 39px;
     color: #000;
-    padding-bottom: 82px;
+    padding-bottom: 62px;
 }
 
 .boxstat {
@@ -159,6 +177,12 @@ section.decsription {
     margin-top: auto;
     text-align: center;
     margin-bottom: auto;
+}
+
+@media only screen and (max-width: 600px) { 
+    .boxstat .contenstat {
+        padding-bottom: 20px;    
+    }
 }
 
 .boxstat .contenstat img {
@@ -240,6 +264,66 @@ span.carousel-control-next-icon {
     margin-left: auto;
 }
 /* :::::::::::::: END SECTION HIGHLIGHT DATA ::::::::::::::*/
+/* ....:::::::::: END DASHBOARD PAGE ::::::::::....*/
+
+/* ....:::::::::: DATA SEKTORAL PAGE ::::::::::....*/
+.descds {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+    color: #000;   
+    padding-bottom: 20px; 
+}
+
+.descds2 {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 36px;
+    color: #000000;
+    padding-bottom: 20px;
+
+}
+
+.has-search-data {
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.has-search-data .form-control {
+    padding-right: 2.375rem;
+    border: 2px solid #000000; 
+    border-radius: 40px;
+}
+  
+.has-search-data .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    color: #000000;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    border: 0px;
+  }
+
+.boxds {
+    width: 270px;
+    height: 270px;
+    left: 100px;
+    top: 763px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+/* ....:::::::::: END DATA SEKTORAL PAGE ::::::::::....*/
+
+
 
 /* :::::::::::::: START SECTION DATA SEKTORAL ::::::::::::::*/
 .sektoral {
