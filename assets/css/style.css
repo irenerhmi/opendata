@@ -404,6 +404,15 @@ span.carousel-control-next-icon {
 .vector3{
     position: absolute;
     right: 0px;
-    top: 190%;
+    top: 180%;
     z-index: -1;
+    width: 280px;
 }
+
+@media only screen and (max-width: 600px) {
+    .vector3 {
+      width: 50%;
+    }
+}
+
+/* ....:::::::::: END DATA SEKTORAL SECTION ::::::::::....*/
