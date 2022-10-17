@@ -215,4 +215,28 @@ section.decsription {
     margin-right: 10px;
     margin-left: 10px;
 }
+
+span.carousel-control-next-icon, span.carousel-control-prev-icon {
+    background-color: #D9D9D9;
+    width: 49px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+span.carousel-control-prev-icon, span.carousel-control-next-icon {
+    color: black;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    opacity: .0;
+}
+
+span.carousel-control-prev-icon {
+    margin-right: auto;
+}
+
+span.carousel-control-next-icon {
+    margin-left: auto;
+}
 /* :::::::::::::: END SECTION HIGHLIGHT DATA ::::::::::::::*/
