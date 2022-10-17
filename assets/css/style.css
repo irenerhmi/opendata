@@ -10,11 +10,19 @@ body {
     height: 100vh;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+      background-image: none;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+}
+
 
 /* :::::::::::::: START NAVIGATION ::::::::::::::*/
 
 nav.navbar {
-    padding-left: 55px;
+    padding-left: 35px;
     padding-right: 27px;
 }
 
@@ -53,7 +61,7 @@ section.decsription {
 .bg-transparent.scrolled {
     background: #FFFF !important;
     shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+}
 
 .desc1 {
     font-size: 27px;
@@ -83,6 +91,14 @@ section.decsription {
     padding-left: 160px;
     padding-right: 160px;
 }
+
+@media only screen and (max-width: 600px) {
+    .has-search {
+      width: 70%;
+      padding: 0px;
+
+    }
+}
   
 .has-search .form-control {
     padding-right: 2.375rem;
@@ -90,7 +106,7 @@ section.decsription {
     border-radius: 40px;
 }
   
-  .has-search .form-control-feedback {
+.has-search .form-control-feedback {
     position: absolute;
     z-index: 2;
     display: block;
@@ -104,15 +120,29 @@ section.decsription {
     background-color: transparent;
     border: 0px;
     padding-right: 190px;
-  }
+}
 
-  .vector2 {
+@media only screen and (max-width: 600px) {
+    .has-search .form-control-feedback {
+      width: 70%;
+      padding: 0px;
+      padding-left: 50%;   
+    }
+}
+
+.vector2 {
     position: absolute;
     z-index: 999;
     left: -1px;
     top: 50px;
     width: 350px;
-  }
+}
+
+@media only screen and (max-width: 600px) {
+    .vector2 {
+      width: 50%;
+    }
+}
 
 /* :::::::::::::: END SECTION DESCRIPTION ::::::::::::::*/
 
@@ -127,7 +157,7 @@ section.decsription {
     font-size: 27px;
     line-height: 39px;
     color: #000;
-    padding-bottom: 82px;
+    padding-bottom: 62px;
 }
 
 .boxstat {
@@ -147,6 +177,12 @@ section.decsription {
     margin-top: auto;
     text-align: center;
     margin-bottom: auto;
+}
+
+@media only screen and (max-width: 600px) { 
+    .boxstat .contenstat {
+        padding-bottom: 20px;    
+    }
 }
 
 .boxstat .contenstat img {
