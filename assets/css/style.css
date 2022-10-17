@@ -10,9 +10,6 @@ body {
     height: 100vh;
 }
 
-.vector {
-
-}
 
 /* :::::::::::::: START NAVIGATION ::::::::::::::*/
 
@@ -45,17 +42,8 @@ nav .navbar-nav li a:hover, nav .navbar-nav li a:visited {
 
 /* :::::::::::::: END NAVIGATION ::::::::::::::*/
 
+/* ---:::::::::: DASHBOARD PAGE ::::::::::---*/
 /* :::::::::::::: START SECTION DESCRIPTION ::::::::::::::*/
-
-/*.decsription {
-    padding-top: 90px;
-    background-image: url("../image/vector2.png");
-    background-repeat: no-repeat;
-    background-position-x: left;
-    background-size: 315px;
-    background-position-y: center;
-
-}*/
 
 section.decsription {
     margin-top: 200px;
@@ -240,3 +228,63 @@ span.carousel-control-next-icon {
     margin-left: auto;
 }
 /* :::::::::::::: END SECTION HIGHLIGHT DATA ::::::::::::::*/
+/* ....:::::::::: END DASHBOARD PAGE ::::::::::....*/
+
+/* ....:::::::::: DATA SEKTORAL PAGE ::::::::::....*/
+.descds {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+    color: #000;   
+    padding-bottom: 20px; 
+}
+
+.descds2 {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 36px;
+    color: #000000;
+    padding-bottom: 20px;
+
+}
+
+.has-search-data {
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.has-search-data .form-control {
+    padding-right: 2.375rem;
+    border: 2px solid #000000; 
+    border-radius: 40px;
+}
+  
+.has-search-data .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    color: #000000;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    border: 0px;
+  }
+
+.boxds {
+    width: 270px;
+    height: 270px;
+    left: 100px;
+    top: 763px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+/* ....:::::::::: END DATA SEKTORAL PAGE ::::::::::....*/
+
+
