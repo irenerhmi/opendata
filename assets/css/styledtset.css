@@ -87,10 +87,11 @@ section.decsription {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    width: 900px;
-  }
+    padding-left: 160px;
+    padding-right: 160px;
+}
   
-  .has-search .form-control {
+.has-search .form-control {
     padding-right: 2.375rem;
     border: 2px solid #000000; 
     border-radius: 40px;
@@ -109,8 +110,8 @@ section.decsription {
     top: 0;
     background-color: transparent;
     border: 0px;
+    padding-right: 190px;
   }
-
   .vector2 {
     position: absolute;
     z-index: 999;
@@ -195,6 +196,12 @@ section.decsription {
     margin-top: 25px;
     margin-left: 25px;
 }
+
+@media (max-width: 800px) {
+    .flex-grow-1 {
+      flex-direction: column;
+    }
+  }
 
 .flex-grow-1 .dttitle{
     font-weight: 500;
