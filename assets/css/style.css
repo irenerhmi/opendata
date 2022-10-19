@@ -12,9 +12,7 @@ body {
 
 @media only screen and (max-width: 600px) {
     body {
-      background-image: none;
-      padding-left: 30px;
-      padding-right: 30px;
+      background-image: none !important;
     }
 }
 
@@ -50,7 +48,7 @@ nav .navbar-nav li a:hover, nav .navbar-nav li a:visited {
 
 /* :::::::::::::: END NAVIGATION ::::::::::::::*/
 
-/* ---:::::::::: DASHBOARD PAGE ::::::::::---*/
+/* ....!:::::::::: START HALAMAN DASHBOARD ::::::::::!....*/
 /* :::::::::::::: START SECTION DESCRIPTION ::::::::::::::*/
 
 section.decsription {
@@ -63,7 +61,7 @@ section.decsription {
     shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.desc1 {
+.descawal {
     font-size: 27px;
     text-align: center; 
     color: black;
@@ -72,7 +70,7 @@ section.decsription {
 
 }
 
-.desc2 {
+.descawal2 {
     font-size: 24px;
     text-align: center; 
     color: black;
@@ -94,8 +92,8 @@ section.decsription {
 
 @media only screen and (max-width: 600px) {
     .has-search {
-      width: 70%;
-      padding: 0px;
+      width: 70% !important;
+      padding: 0px !important;
 
     }
 }
@@ -124,13 +122,13 @@ section.decsription {
 
 @media only screen and (max-width: 600px) {
     .has-search .form-control-feedback {
-      width: 70%;
-      padding: 0px;
-      padding-left: 50%;   
+      width: 70% !important;
+      padding: 0px !important;
+      padding-left: 50% !important;   
     }
 }
 
-.vector2 {
+.vectorawal {
     position: absolute;
     z-index: 999;
     left: -1px;
@@ -139,8 +137,8 @@ section.decsription {
 }
 
 @media only screen and (max-width: 600px) {
-    .vector2 {
-      width: 50%;
+    .vectorawal {
+      width: 50% !important;
     }
 }
 
@@ -158,6 +156,11 @@ section.decsription {
     line-height: 39px;
     color: #000;
     padding-bottom: 62px;
+}
+
+.row {
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .boxstat {
@@ -181,7 +184,7 @@ section.decsription {
 
 @media only screen and (max-width: 600px) { 
     .boxstat .contenstat {
-        padding-bottom: 20px;    
+        padding-bottom: 20px !important;    
     }
 }
 
@@ -212,7 +215,6 @@ section.decsription {
 }
 
 /* :::::::::::::: END SECTION STATISTIK ::::::::::::::*/
-
 
 /* :::::::::::::: START SECTION HIGHLIGHT DATA ::::::::::::::*/
 
@@ -264,64 +266,94 @@ span.carousel-control-next-icon {
     margin-left: auto;
 }
 /* :::::::::::::: END SECTION HIGHLIGHT DATA ::::::::::::::*/
-/* ....:::::::::: END DASHBOARD PAGE ::::::::::....*/
+/* ....!:::::::::: END HALAMAN DASHBOARD ::::::::::!....*/
 
-/* ....:::::::::: DATA SEKTORAL PAGE ::::::::::....*/
-.descds {
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 40px;
-    color: #000;   
-    padding-bottom: 20px; 
-}
+/* ....!:::::::::: START HALAMAN DATA SEKTORAL ::::::::::!....*/
 
-.descds2 {
+.label-ds {
+    font-size: 20px;
     font-weight: 400;
-    font-size: 25px;
-    line-height: 36px;
+    line-height: 30px;
     color: #000000;
-    padding-bottom: 20px;
-
 }
 
-.has-search-data {
-    position: relative;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+.img2 {
+    display: none;
 }
-  
-.has-search-data .form-control {
-    padding-right: 2.375rem;
-    border: 2px solid #000000; 
-    border-radius: 40px;
+.thumbnail:hover .img1 {
+    display: none;
 }
-  
-.has-search-data .form-control-feedback {
-    position: absolute;
-    z-index: 2;
+.thumbnail:hover .img2 {
     display: block;
-    width: 2.375rem;
-    height: 2.375rem;
-    line-height: 2.375rem;
-    text-align: center;
-    color: #000000;
-    right: 0;
-    top: 0;
-    background-color: transparent;
-    border: 0px;
+}
+
+/* Grid Data Sektoral*/
+.sektoral2 {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+/* Float four columns side by side */
+.sektoral2.column2 {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
   }
 
-.boxds {
-    width: 270px;
-    height: 270px;
-    left: 100px;
-    top: 763px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
+.col-sm {
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
 }
-/* ....:::::::::: END DATA SEKTORAL PAGE ::::::::::....*/
+
+ .col-sm h6{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .colsekt2 {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .colsekt2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .col-sm {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card-d2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    height: 270px;
+    width: 270px;
+  }
+
+.icondtsek2{
+    width: 55%;
+    margin-top: 45px;
+    margin-left: 50px;
+}
+
+.card-d:hover{
+    background-color: #B0DEFF;
+}
+/* ....!:::::::::: END DATA SEKTORAL PAGE ::::::::::!....*/
 
 
 
@@ -423,6 +455,7 @@ span.carousel-control-next-icon {
 
 /* ....:::::::::: END DATA SEKTORAL SECTION ::::::::::....*/
 
+<<<<<<< HEAD
 /* :::::::::::::: START SECTION APP TURUNAN ::::::::::::::*/
 .card-t{
     border-radius: 20px;
@@ -491,10 +524,19 @@ span.carousel-control-next-icon {
     left: -1px;
     top: 263%;
     width: 350px;
+=======
+/* ....!:::::::::: START HALAMAN TURUNAN DATA SEKTORAL ::::::::::!....*/
+.vector4{
+    position: absolute;
+    right: 0px;
+    top: 500px;
+    z-index: -1;
+>>>>>>> repou/main
 }
 
 @media only screen and (max-width: 600px) {
     .vector4 {
+<<<<<<< HEAD
       top: 708%;
       width: 45%;
     }
@@ -570,3 +612,9 @@ section.footeer{
 }
 
 /* :::::::::::::: END FOOTER ::::::::::::::*/
+=======
+      width: 50% !important;
+    }
+}
+/* ....!:::::::::: END HALAMAN TURUNAN DATA SEKTORAL ::::::::::!....*/
+>>>>>>> repou/main

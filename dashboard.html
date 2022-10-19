@@ -1,69 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dashboard - Open Data Kota Bandung</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
- 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Home - Open Data Kota Bandung</title>
 
-    <!--- CSS Files --->
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
+    <!-- Google Fonts Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
 
-    <!-- Logo Tittle Bar -->
-    <link rel="icon" href="assets/image/logo.png" type="image/x-icon">
+    <!-- MDB -->
+    <link rel="stylesheet" href="assets/css/mdb.min.css" />
 
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-transparent">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="assets/image/logo.png" alt="" width="50" height="39" class="d-inline-block align-text-top">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item m">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item mx-2">
-            <a class="nav-link" href="#">Dataset</a>
-            </li>
-            <li class="nav-item mx-2">
-            <a class="nav-link" href="#">Topik</a>
-            </li>
-            <li class="nav-item mx-2">
-            <a class="nav-link" href="#">Aplikasi</a>
-            </li>
-            <li class="nav-item mx-2">
-            <a class="nav-link" href="#">Folder</a>
-            </li>
-        </ul>
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <!--<div class="bg-image" 
+     style="height: 100vh; background-image: url('assets/image/vector.png'); position: relative; z-index: 999; background-repeat: no-repeat; background-position-x: right;background-size: 600px;">
+    </div>-->
+    <!--::: Navigation Bar :::-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-scrolled bg-transparent shadow-none">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="assets/image/logo.png" alt="" width="70" height="59" class="d-inline-block align-text-top"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dataset</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Organisasi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Data Sektoral</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Aplikasi
+                </a>
+                <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item" href="#">ARIMBI</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Bandung City Dashboard</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Open Data APBD</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Bahasa
+                </a>
+                <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item" href="#">Indonesia</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">English</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
-    <img class='ayam' src='assets/image/vector.png'>
+        <!--<img class="vector" width="600px" src="assets/image/vector.png">-->
     </nav>
+    <!--::: End Navigation Bar :::-->
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="assets/js/bootstrap.js"></script>
-    <script src="assets/js/popper.min.js"></script>
+    <!--::: Section Deskripsi Website :::-->
     
+    <section class="decsription">
+      <h1 class="desc1">
+        PORTAL DATA <br> KOTA BANDUNG
+      </h1>
+      <div style="">
+        <h2 class="desc2">
+          Di sini tempatnya nyari data-data Kota Bandung. Let’s go!
+        </h2>
+        <div class="has-search">
+          <!--<input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>-->
+          <input type="text" class="form-control" placeholder="Search">
+          <button class="form-control-feedback"><i class="fas fa-search"></i></button>
+        </div>  
+      </div> 
+      <img class="vector2" src="assets/image/vector2.png">   
+    </section>
+    <!--::: End Section Deskripsi Website :::-->
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-</body>
-</htm>
+    <!--::: Section Statistik Website :::-->
+    <section class="statistik">
+      <h1 class="stat">
+        Statistik Open Data Kota Bandung
+      </h1>
+      <div class="row boxstat">
+        <div class="col-sm contenstat">
+          <a href="#">
+            <img class="" src='assets/image/Cloud.png' style="height: 30px;">
+            <h2>3091</h2>
+            <h3>Total Dataset</h3>
+          </a>
+        </div>
+        <div class="col-sm contenstat">
+          <a href="#">
+            <img class="" src='assets/image/Pie.png' style="height: 30px;">
+            <h2>8982</h2>
+            <h3>Total Data</h3>
+          </a>
+        </div>
+        <div class="col-sm contenstat">
+          <a href="#">
+            <img class="" src='assets/image/Network.png' style="height: 30px;">
+            <h2>75</h2>
+            <h3>Total Organisasi</h3>
+          </a>
+        </div>
+        <div class="col-sm contenstat">
+          <a href="#">
+            <img class="" src='assets/image/Graph.png' style="height: 30px;">
+            <h2>8</h2>
+            <h3>Total Data Sektoral</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--::: End Section Statistik Website :::-->
+
+    <!--::: Section Highlight Data Website :::-->
+    <section class="highlight">
+      <h1 class="stat">
+        Highlight Data
+      </h1>
+      <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+
+              <div class="card" style="width: 18rem;">
+                <img src="assets/image/h1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href="#"><h5 class="card-title">Media Sosial Kota Bandung</h5></a>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="assets/image/h2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href="#"><h5 class="card-title">Laju Inflasi Kota Bandung</h5></a>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                  <img src="assets/image/h3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href=""><h5 class="card-title">Visualisasi data kemiskinan Kota Bandung</h5></a>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="assets/image/h3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href=""><h5 class="card-title">Visualisasi data kemiskinan Kota Bandung</h5></a>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+
+              <div class="card" style="width: 18rem;">
+                <img src="assets/image/h1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href=""><h5 class="card-title">Media Sosial Kota Bandung</h5></a>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="assets/image/h2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href=""><h5 class="card-title">Laju Inflasi Kota Bandung</h5></a>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                  <img src="assets/image/h3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href=""><h5 class="card-title">Visualisasi data kemiskinan Kota Bandung</h5></a>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="assets/image/h3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href=""><h5 class="card-title">Visualisasi data kemiskinan Kota Bandung</h5></a>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+
+              <div class="card" style="width: 18rem;">
+                <img src="assets/image/h1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href=""><h5 class="card-title">Media Sosial Kota Bandung</h5></a>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="assets/image/h2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href=""><h5 class="card-title">Laju Inflasi Kota Bandung</h5></a>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                  <img src="assets/image/h3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href=""><h5 class="card-title">Visualisasi data kemiskinan Kota Bandung</h5></a>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="assets/image/h3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href=""><h5 class="card-title">Visualisasi data kemiskinan Kota Bandung</h5></a>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+      </div>
+
+    </section>
+    <!--::: End Section Highlight Data Website :::-->
+
+    <!--::: Section Data Sektoral Website :::-->
+    <section class="sektoral">
+      <h1 class="sekt">
+        Data Sektoral
+      </h1>
+      <div class="row colsekt">
+        <div class="column klom">
+          <div class="card card-d">
+            <img class="icondtsek" width="70px" src="assets/image/icondtsek1.png">
+          </div> 
+          <h6>Administrasi Pemerintah</h6>
+        </div>
+      
+        <div class="column klom">
+          <div class="card card-d">
+            <img class="icondtsek" width="70px" src="assets/image/icondtsek2.png">
+          </div>
+          <h6>Ekonomi dan Keuangan</h6>
+        </div>
+        
+        <div class="column klom">
+          <div class="card card-d">
+            <img class="icondtsek" width="70px" src="assets/image/icondtsek3.png">
+          </div>
+          <h6>Infrastruktur</h6>
+        </div>
+        
+        <div class="column klom">
+          <div class="card card-d">
+            <img class="icondtsek" width="70px" src="assets/image/icondtsek4.png">
+          </div>
+          <h6>Kependudukan</h6>
+        </div>
+
+        <div class="column klom">
+          <div class="card card-d">
+            <img class="icondtsek" width="70px" src="assets/image/icondtsek5.png">
+          </div>
+          <h6>Kesehatan</h6>
+        </div>
+        <div class="column klom">
+          <div class="card card-d">
+            <img class="icondtsek" width="70px" src="assets/image/icondtsek6.png">
+          </div>
+          <h6>Lingkungan Hidup</h6>
+        </div>
+        <div class="column klom">
+          <div class="card card-d">
+            <img class="icondtsek" width="70px" src="assets/image/icondtsek7.png">
+          </div>
+          <h6>Pendidikan</h6>
+        </div>
+        <div class="column klom">
+          <div class="card card-d">
+            <img class="icondtsek" width="70px" src="assets/image/icondtsek8.png">
+          </div>
+          <h6>Sosial</h6>
+        </div>
+      </div>
+      <img class="vector3" src="assets/image/vector4.png">
+    </section>
+    <!--::: End Section Data Sektoral Website :::-->
+
+    <!--::: Section Aplikasi Turunan:::-->
+    <section class="sektoral">
+      <h1 class="sekt">
+        Aplikasi-Aplikasi Terkait Dengan Portal Data Kota Bandung
+      </h1>
+      <!-- <div class="row colsekt">
+        <div class="column klom">
+          <div class="card card-d">
+            <img class="icondtsek" width="70px" src="assets/image/icondtsek1.png">
+          </div> 
+          <h6>Administrasi Pemerintah</h6>
+        </div>
+      
+        <div class="column klom">
+          <div class="card card-d">
+            <img class="icondtsek" width="70px" src="assets/image/icondtsek2.png">
+          </div>
+          <h6>Ekonomi dan Keuangan</h6>
+        </div>
+        
+        <div class="column klom">
+          <div class="card card-d">
+            <img class="icondtsek" width="70px" src="assets/image/icondtsek3.png">
+          </div>
+          <h6>Infrastruktur</h6>
+        </div>
+        
+        <div class="column klom">
+          <div class="card card-d">
+            <img class="icondtsek" width="70px" src="assets/image/icondtsek4.png">
+          </div>
+          <h6>Kependudukan</h6>
+        </div> -->
+      </div>
+      <!-- <img class="vector3" src="assets/image/vector4.png"> -->
+    </section>
+    <!--::: End Section Aplikasi Turunan :::-->
+
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Custom Navbar Background On Scroll  -->
+    <script>
+      $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
+        });
+
+        $(document).ready(function() {
+          $('#myCarousel').carousel({
+            interval: 10000
+        })
+      });
+    </script>
+    <!-- Custom Navbar Background On Scroll  -->
+
+  </body>
+</html>
