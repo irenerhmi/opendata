@@ -81,6 +81,37 @@ section.decsription {
 
 }
 
+.descdtset1 {
+    font-size: 29px;
+    text-align: left; 
+    color: black;
+    font-weight: 600;
+    line-height: 48px;
+    padding-left: 20px;
+}
+
+.descdtset2 {
+    font-size: 20px;
+    text-align: left; 
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    line-height: 48px;
+    font-weight: 400;
+    padding-left: 22px;
+}
+
+.descdtset3 {
+    font-size: 20px;
+    text-align: left; 
+    color: black;
+    padding-top: -20px;
+    padding-bottom: 35px;
+    line-height: 28px;
+    font-weight: 400;
+    padding-left: 22px;
+}
+
 .has-search {
     position: relative;
     justify-content: center;
@@ -134,6 +165,20 @@ section.decsription {
     left: -1px;
     top: 50px;
     width: 350px;
+}
+
+.vectordtset {
+    position: absolute;
+    z-index: -1;
+    left: -1px;
+    top: 115px;
+    width: 130px;
+  }
+
+@media only screen and (max-width: 600px) {
+    .vectordtset {
+      width: 20% ;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -353,90 +398,6 @@ span.carousel-control-next-icon {
 .card-d:hover{
     background-color: #B0DEFF;
 }
-/* ....!:::::::::: END DATA SEKTORAL PAGE ::::::::::!....*/
-
-
-
-/* :::::::::::::: START SECTION DATA SEKTORAL ::::::::::::::*/
-.sektoral {
-    padding-top: 60px;
-    padding-bottom: 30px;
-}
-
-.sekt {
-    font-weight: 600;
-    font-size: 27px;
-    line-height: 39px;
-    color: #000;
-    padding-bottom: 62px;
-}
-
-/* Float four columns side by side */
-.sektoral.column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-  }
-
-  .row.colsekt{
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .column.klom{
-    margin-top: 20px;
-    width: 250px;
-    margin-right: 20px;
-    margin-left: 55px;
-  }
-  .klom h6{
-    text-align: center;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 30px;
-    color: #000000;
-    padding-top: 10px;
-    margin-left: 75px;
-  }
-  
-  /* Remove extra left and right margins, due to padding */
-  .colsekt {margin: 0 -5px;}
-  
-  /* Clear floats after the columns */
-  .colsekt:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive columns */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-  
-  /* Style the counter cards */
-  .card-d {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-    height: 270px;
-    width: 270px;
-  }
-
-.icondtsek{
-    width: 55%;
-    margin-top: 45px;
-    margin-left: 50px;
-}
-
-.card-d:hover{
-    background-color: #B0DEFF;
-}
 
 .vector3{
     position: absolute;
@@ -453,7 +414,7 @@ span.carousel-control-next-icon {
     }
 }
 
-/* ....:::::::::: END DATA SEKTORAL SECTION ::::::::::....*/
+/* ....!:::::::::: END DATA SEKTORAL PAGE ::::::::::!....*/
 
 /* ....!:::::::::: START HALAMAN TURUNAN DATA SEKTORAL ::::::::::!....*/
 
@@ -480,7 +441,7 @@ span.carousel-control-next-icon {
     height: 190px;
     margin: auto;
     position: relative;
-    border-radius: 20px;
+    border-radius: 8px;
   }
   
   .img-desc {
@@ -488,7 +449,7 @@ span.carousel-control-next-icon {
     width: 100%;
     height: 100%;
     background-color: rgba(98, 98, 98, 0.9);
-    border-radius: 20px;
+    border-radius: 8px;
     z-index: -1;
     transition: all 0.5 ease-in; 
     text-align: center;
@@ -523,7 +484,7 @@ span.carousel-control-next-icon {
     position: absolute;
     z-index: -1;
     left: -1px;
-    top: 263%;
+    top: 240%;
     width: 350px;
 }
 
@@ -534,6 +495,179 @@ span.carousel-control-next-icon {
 
 
 /* :::::::::::::: END SECTION APP TURUNAN ::::::::::::::*/
+
+/* ....!:::::::::: START HALAMAN DATASET ::::::::::!....*/
+
+/* :::::::::::::: START SECTION Total Data dan Filter ::::::::::::::*/
+.tdata {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.data {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 39px;
+    color: #000;
+    padding-bottom: 30px;
+    padding-left: 22px;
+}
+
+.float-end{
+    padding-top: 10px;
+    padding-right: 27px;
+}
+
+.float-end .btn{
+    font-size: 16px;
+    font-weight: 550;
+    text-transform: capitalize;
+    color: #000000;
+    text-align: center;
+    background-color: #B0DEFF;
+    border-radius: 10px;
+    border: none;
+    width: auto;
+    height: 40px;
+}
+
+.float-end ul.dropdown-menu{
+    width: 100px;
+}
+
+.float-end ul.dropdown-menu button.dropdown-item{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    text-align: right;
+}
+
+.float-end ul.dropdown-menu button.dropdown-item:hover{
+    background-color: #B0DEFF;
+}
+
+/* :::::::::::::: END SECTION Total Data dan Filter ::::::::::::::*/
+
+/* :::::::::::::: START SECTION Dataset Flexbox ::::::::::::::*/
+.dtset {
+    padding-left: 22px;
+}
+
+.d-flex{
+    justify-content: left;
+    padding-bottom: 30px;
+    /* width: 100px; */
+}
+
+.flex-shrink-0 {
+    background: #B0DEFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 120px;
+    height: 120px;
+}
+
+.icondt1{
+    width: 55%;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.dttitle{
+    font-weight: 600;
+    color: #000000;
+    line-height: 24px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.desk{
+    font-size: 20px;
+    color: black;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.desk2{
+    font-size: 20px;
+    color: black;
+    line-height: 19px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.hvr{
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    padding-right: 18px
+}
+
+a.klmbtn{
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+    padding-right: 18px
+}
+
+a.hvr:hover{
+    color: #005288;
+}
+
+.vectorflex{
+    position: absolute;
+    right: 0px;
+    top: 500px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+    .vectorflex {
+      top: 100%;
+      width: 35%;
+    }
+}
+/* :::::::::::::: END SECTION Dataset Flexbox ::::::::::::::*/
+
+
+
+.flexlhtdt{
+    background: #D9D9D9;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    z-index: 999;
+}
+
+/* :::::::::::::: START SECTION PAGINATION ::::::::::::::*/
+
+section.pagin{
+    padding-left: 22px;
+    padding-bottom: 50px;
+}
+
+nav .pagination{
+    padding-bottom: 20px;
+    position: absolute;
+    left: 45%;
+}
+
+nav ul.pagination li.page-item a.page-link{
+    color: #000000;
+    font-weight: 600;
+}
+
+nav ul.pagination li.page-item a.page-link:hover:not(.active){
+    background-color: #B0DEFF;
+}
+
+/* :::::::::::::: END SECTION PAGINATION ::::::::::::::*/
+
+/* ....!:::::::::: END HALAMAN DATASET ::::::::::!....*/
 
 /* :::::::::::::: START FOOTER ::::::::::::::*/
 section.footeer{

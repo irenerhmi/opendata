@@ -51,7 +51,7 @@ section.decsription {
     shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-.desc1 {
+.descdtset1 {
     font-size: 29px;
     text-align: left; 
     color: black;
@@ -60,7 +60,7 @@ section.decsription {
     padding-left: 20px;
 }
 
-.desc2 {
+.descdtset2 {
     font-size: 20px;
     text-align: left; 
     color: black;
@@ -71,7 +71,7 @@ section.decsription {
     padding-left: 22px;
 }
 
-.desc3 {
+.descdtset3 {
     font-size: 20px;
     text-align: left; 
     color: black;
@@ -112,7 +112,7 @@ section.decsription {
     border: 0px;
     padding-right: 190px;
   }
-  .vector2 {
+  .vectordtset {
     position: absolute;
     z-index: 999;
     left: -1px;
