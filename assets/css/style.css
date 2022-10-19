@@ -242,6 +242,13 @@ section.decsription {
     margin-left: 10px;
 }
 
+.hgl-judul {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}
+
 span.carousel-control-next-icon, span.carousel-control-prev-icon {
     background-color: #D9D9D9;
     width: 49px;
