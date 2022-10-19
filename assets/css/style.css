@@ -455,7 +455,9 @@ span.carousel-control-next-icon {
 
 /* ....:::::::::: END DATA SEKTORAL SECTION ::::::::::....*/
 
-<<<<<<< HEAD
+<<<<<<<<< Temporary merge branch 1
+/* ....!:::::::::: START HALAMAN TURUNAN DATA SEKTORAL ::::::::::!....*/
+
 /* :::::::::::::: START SECTION APP TURUNAN ::::::::::::::*/
 .card-t{
     border-radius: 20px;
@@ -524,23 +526,14 @@ span.carousel-control-next-icon {
     left: -1px;
     top: 263%;
     width: 350px;
-=======
-/* ....!:::::::::: START HALAMAN TURUNAN DATA SEKTORAL ::::::::::!....*/
-.vector4{
-    position: absolute;
-    right: 0px;
-    top: 500px;
-    z-index: -1;
->>>>>>> repou/main
 }
 
-@media only screen and (max-width: 600px) {
-    .vector4 {
-<<<<<<< HEAD
-      top: 708%;
-      width: 45%;
-    }
-}
+
+
+
+/* ....!:::::::::: END HALAMAN TURUNAN DATA SEKTORAL ::::::::::!....*/
+=========
+
 
 /* :::::::::::::: END SECTION APP TURUNAN ::::::::::::::*/
 
@@ -612,9 +605,4 @@ section.footeer{
 }
 
 /* :::::::::::::: END FOOTER ::::::::::::::*/
-=======
-      width: 50% !important;
-    }
-}
-/* ....!:::::::::: END HALAMAN TURUNAN DATA SEKTORAL ::::::::::!....*/
->>>>>>> repou/main
+
