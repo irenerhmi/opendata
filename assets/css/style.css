@@ -270,6 +270,23 @@ span.carousel-control-next-icon {
 
 /* ....!:::::::::: START HALAMAN DATA SEKTORAL ::::::::::!....*/
 
+.label-ds {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #000000;
+}
+
+.img2 {
+    display: none;
+}
+.thumbnail:hover .img1 {
+    display: none;
+}
+.thumbnail:hover .img2 {
+    display: block;
+}
+
 /* Grid Data Sektoral*/
 .sektoral2 {
     padding-top: 60px;
@@ -295,7 +312,8 @@ span.carousel-control-next-icon {
     font-weight: 500;
     line-height: 30px;
     color: #000000;
-    padding-top: 10px
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   
   /* Remove extra left and right margins, due to padding */
