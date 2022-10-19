@@ -122,22 +122,65 @@
     </section>
     <!--::: End Section Deskripsi Website :::-->
 
-    <!--::: Section Deskripsi Website :::-->
+    <!--::: Section Hasil Evaluasi Dataset Website :::-->
     <section class="content-dtset">
-      <div class="card">
-        <div class="card-header py-0 d-flex">
-          <div class="col-12 col-sm-6 pl-sm-0">
-            <ul class="nav-pills nav" role="tablist">
+      <div class="card card-h">
+        <div class="card-header">
+          <h4 class="titlehasil"><i class="fas fa-list-ul"></i> Hasil Evaluasi Dataset</h4>
+          <div class="col-12">
+            <ul class="nav-pills nav nav-h" role="tablist">
               <li class="nav-item">
-                <a href="#" id="ngb-nav-3" role="tab" aria-selected="true" aria-disabled="false" class="nav-link active" aria-controls="ngb-nav-3-panel">
-                  Umum
+                <a href="#" id="ngb-nav-3" class="nav-link active actived" >
+                  <i class="fas fa-info-circle"></i> Umum
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" id="ngb-nav-3" role="tab" aria-selected="true" aria-disabled="false" class="nav-link active actived" aria-controls="ngb-nav-3-panel">
+                  <i class="fas fa-file-alt"></i> Standar Data
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" id="ngb-nav-3" role="tab" aria-selected="true" aria-disabled="false" class="nav-link active actived" aria-controls="ngb-nav-3-panel">
+                  <i class="fas fa-book"></i> Metadata, Kode Referensi & Interoperabilitas
                 </a>
               </li>
             </ul>
           </div>
         </div>
+        <dl class="row row-h">
+          <dt class="col-sm-3">Kolom</dt>
+          <dd class="col-sm-9">Nilai </dd>
+          <dt class="col-sm-3">Tanggal Evaluasi Terakhir</dt>
+          <dd class="col-sm-9"> 11 Desember 2019</dd>
+          <dt class="col-sm-3">Ketersediaan</dt>
+          <dd class="col-sm-9">100%</dd>
+          <dt class="col-sm-3 text-truncate">Cakupan Data</dt>
+          <dd class="col-sm-9"> Belum pernah dievaluasi sebelumnya</dd>
+          <dt class="col-sm-3 text-truncate">Biaya</dt>
+          <dd class="col-sm-9">Rp. 0,-</dd>
+          <dt class="col-sm-3 text-truncate">Terakhir Diperbaharui</dt>
+          <dd class="col-sm-9">5 Agustus 2022</dd>
+        </dl>
       </div>
     </section>
+
+
+    <!--::: Section Total Data dan Filter :::-->
+    <section class="tdata">
+      <div class="float-end">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-mdb-toggle="dropdown" aria-expanded="false">
+            Filter Dataset
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <li><button class="dropdown-item" type="button">Terbaru</button></li>
+            <li><button class="dropdown-item" type="button">Terlama</button></li>
+          </ul>
+      </div>
+      <!-- <h1 class="data">
+          408 Total Dataset
+      </h1> -->
+    </section>
+    <!--::: End Section Total Data dan Filter :::-->
 
     <!-- End your project here-->
 
