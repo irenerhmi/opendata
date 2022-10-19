@@ -455,6 +455,8 @@ span.carousel-control-next-icon {
 
 /* ....:::::::::: END DATA SEKTORAL SECTION ::::::::::....*/
 
+/* ....!:::::::::: START HALAMAN TURUNAN DATA SEKTORAL ::::::::::!....*/
+
 /* :::::::::::::: START SECTION APP TURUNAN ::::::::::::::*/
 .card-t{
     border-radius: 20px;
@@ -525,12 +527,11 @@ span.carousel-control-next-icon {
     width: 350px;
 }
 
-@media only screen and (max-width: 600px) {
-    .vector4 {
-      top: 708%;
-      width: 45%;
-    }
-}
+
+
+
+/* ....!:::::::::: END HALAMAN TURUNAN DATA SEKTORAL ::::::::::!....*/
+
 
 /* :::::::::::::: END SECTION APP TURUNAN ::::::::::::::*/
 
@@ -600,3 +601,6 @@ section.footeer{
         width: 700px;
     }
 }
+
+/* :::::::::::::: END FOOTER ::::::::::::::*/
+
