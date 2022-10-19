@@ -334,4 +334,10 @@ section.footeer{
     height: 70px;
 }
 
+@media only screen and (max-width: 1044px) {
+    .footeer{
+        width: 700px;
+    }
+}
+
 /* :::::::::::::: END FOOTER ::::::::::::::*/
