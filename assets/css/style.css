@@ -321,6 +321,13 @@ span.carousel-control-next-icon {
 /* ....!:::::::::: END HALAMAN DASHBOARD ::::::::::!....*/
 
 /* ....!:::::::::: START HALAMAN DATA SEKTORAL ::::::::::!....*/
+.sekt {
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 39px;
+    color: #000;
+    padding-bottom: 62px;
+}
 
 .label-ds {
     font-size: 20px;
@@ -421,6 +428,20 @@ span.carousel-control-next-icon {
     }
 }
 
+.vectorsekt{
+    position: absolute;
+    right: 0px;
+    top: 800px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+    .vectorsekt {
+      top: 310%;
+      width: 35%;
+    }
+}
+
 /* ....!:::::::::: END DATA SEKTORAL PAGE ::::::::::!....*/
 
 /* ....!:::::::::: START HALAMAN TURUNAN DATA SEKTORAL ::::::::::!....*/
@@ -444,7 +465,6 @@ span.carousel-control-next-icon {
 }
 
 #aplturunan {
-    /* width: 600px; */
     height: 190px;
     margin: auto;
     position: relative;
@@ -704,6 +724,26 @@ ul.nav-h{
     text-transform: capitalize;
 }
 
+.nav-pills a.nav-link.actived:focus{
+    color: #005288;
+    background-color: #fff !important;
+    border-radius: 0;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.nav-pills a.nav-link.actv{
+    color: #005288;
+    background-color: #fff !important;
+    border-radius: 0;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
 .row-h{
     padding-top: 10px;
     padding-left: 15px;
@@ -711,6 +751,64 @@ ul.nav-h{
 }
 
 /* :::::::::::::: END SECTION HASIL EVALUASI DATASET ::::::::::::::*/
+
+/* :::::::::::::: START SECTION TAGS ::::::::::::::*/
+.col-tag{
+    width: 320px;
+}
+
+.col.col-tags{
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: #B0DEFF;
+    color: #000000;
+    padding: 0px 20px ;
+    font-size: 16px;
+}
+/* :::::::::::::: END SECTION TAGS ::::::::::::::*/
+
+/* :::::::::::::: START SECTION DATA DARI DATASET ::::::::::::::*/
+.data-d {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 39px;
+    color: #000;
+    padding-left: 22px;
+}
+
+.deskp{
+    font-size: 20px;
+    color: black;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+.cont-dt{
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    padding-right: 18px
+}
+
+button.dropdown-item.dropdown-data{
+    width: 111px;
+}
+
+.vectorlhtdtset{
+    position: absolute;
+    right: 0px;
+    top: 1300px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+    .vectorlhtdtset {
+      top: 310%;
+      width: 35%;
+    }
+}
+
+/* :::::::::::::: END SECTION DATA DARI DATASET ::::::::::::::*/
 
 /* :::::::::::::: START SECTION PAGINATION ::::::::::::::*/
 
