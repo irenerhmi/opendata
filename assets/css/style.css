@@ -608,6 +608,22 @@ span.carousel-control-next-icon {
     font-size: 20px;
 }
 
+.dttitle-dinas{
+    font-weight: 500;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #000000;
+    line-height: 24px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.ket-dinas{
+    color: #000000;
+    text-align: left;
+    font-size: 16px;
+}
+
 .desk{
     font-size: 20px;
     color: black;
@@ -790,8 +806,23 @@ ul.nav-h{
     padding-right: 18px
 }
 
-button.dropdown-item.dropdown-data{
-    width: 111px;
+#dropdownMenuLink{
+    font-size: 16px;
+    font-weight: 550;
+    text-transform: capitalize;
+    color: #000000;
+    background-color: #B0DEFF;
+    border-radius: 10px;
+}
+
+.dropdown ul.dropdown-menu a.dropdown-item{
+    color: #000000;
+    font-weight: 600;
+    text-align: right;
+}
+
+.dropdown ul.dropdown-menu a.dropdown-item:hover{
+    background-color: #B0DEFF;
 }
 
 .vectorlhtdtset{
