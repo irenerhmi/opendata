@@ -1,7 +1,5 @@
 
 body {
-    padding-left: 55px;
-    padding-right: 30px;
     background-image: url("../image/vector.png");
     background-repeat: no-repeat;
     background-position-x: right;
@@ -16,6 +14,10 @@ body {
     }
 }
 
+.content-fluid {
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
 /* :::::::::::::: START NAVIGATION ::::::::::::::*/
 
@@ -287,6 +289,10 @@ section.decsription {
     margin-left: 10px;
 }
 
+.card:hover {
+    background-color: #B0DEFF;
+}
+
 .hgl-judul {
     font-weight: 500;
     font-size: 20px;
@@ -511,8 +517,15 @@ span.carousel-control-next-icon {
     position: absolute;
     z-index: -1;
     left: -1px;
-    top: 240%;
+    top: 1590px;
     width: 350px;
+}
+
+@media only screen and (max-width: 600px) {
+    .vector4 {
+      top: 1650px;
+      width: 35%;
+    }
 }
 
 
