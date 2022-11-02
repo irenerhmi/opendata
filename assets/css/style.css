@@ -714,6 +714,10 @@ a.hvr:hover{
     background-clip: initial;   
 }
 
+.card-h:hover{
+    background-color: white !important;
+}
+
 .titlehasil{
     color: #000000;
     font-weight: 500;
@@ -819,7 +823,7 @@ ul.nav-h{
     padding-right: 18px
 }
 
-#dropdownMenuLink{
+#unduhdropdownMenuLink{
     font-size: 16px;
     font-weight: 550;
     text-transform: capitalize;
@@ -828,13 +832,13 @@ ul.nav-h{
     border-radius: 10px;
 }
 
-.dropdown ul.dropdown-menu a.dropdown-item{
+.dropdown ul.dropdown-unduh a.dropdown-itemunduh{
     color: #000000;
     font-weight: 600;
     text-align: right;
 }
 
-.dropdown ul.dropdown-menu a.dropdown-item:hover{
+.dropdown ul.dropdown-unduh a.dropdown-itemunduh:hover{
     background-color: #B0DEFF;
 }
 
