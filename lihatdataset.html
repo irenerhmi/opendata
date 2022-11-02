@@ -105,7 +105,7 @@
     <!--::: End Navigation Bar :::-->
 
     <!--::: Section Deskripsi Website :::-->
-    <section class="decsription">
+    <section class="decsription content-fluid">
       <h1 class="descdtset1">
         Jumlah Kasus Filariasis (Kaki Gajah) di Kota Bandung
       </h1>
@@ -124,7 +124,7 @@
     <!--::: End Section Deskripsi Website :::-->
 
     <!--::: Section Hasil Evaluasi Dataset Website :::-->
-    <section class="content-dtset">
+    <section class="content-dtset content-fluid">
       <div class="card card-h">
         <div class="card-header">
           <h4 class="titlehasil"><i class="fas fa-list-ul"></i> Hasil Evaluasi Dataset</h4>
@@ -167,7 +167,7 @@
     <!--::: End Section Hasil Evaluasi Dataset Website :::-->
 
     <!--::: Section Total Data dan Filter :::-->
-    <section class="tdata">
+    <section class="tdata content-fluid">
       <div class="float-end">
           <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-mdb-toggle="dropdown" aria-expanded="false">
             Filter Dataset
@@ -177,7 +177,7 @@
             <li><button class="dropdown-item" type="button">Terlama</button></li>
           </ul>
       </div>
-      <h1 class="data-d">
+      <h1 class="data-d ">
         <i class="fas fa-tags"></i> Tags
         <div class="d-flex align-items-start bg-light mb-3 col-tag" style="height: 70px;">
           <div class="col col-tags">filariasis</div>
@@ -189,8 +189,8 @@
     <!--::: End Section Total Data dan Filter :::-->
 
     <!--::: Section Data dari Dataset :::-->
-    <hr>
-    <section class="datadtset">
+    <section class="datadtset content-fluid">
+      <hr>
       <div class="d-flex">
         <div class="p-2 w-100">
           <h4 class="dttitle">Tahun 2021 - Data Jumlah Kasus Filariasis di Kota Bandung</h4>
@@ -203,7 +203,8 @@
             <a class="cont-dt" href="#"><i class="fas fa-eye"></i> Pratinjau</a>
             <a href="#" class="cont-dt"><i class="far fa-clock "></i> 6 Bulan yang lalu</a>
         </div>
-        <div class="dropdown">
+        <!-- DROPDOWN OLD -->
+        <!-- <div class="dropdown">
           <a
             class="btn dropdown-toggle"
             href="#"
@@ -214,9 +215,32 @@
           >
             Unduh
           </a>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="#">CSV</a></li>
-            <li><a class="dropdown-item" href="#">API</a></li>
+          <ul class="dropdown-menu dropdown-unduh" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item dropdown-itemunduh" href="#">CSV</a></li>
+            <li><a class="dropdown-item dropdown-itemunduh" href="#">API</a></li>
+          </ul>
+        </div> -->
+
+        <div class="dropdown" id="dd-unduh">
+          <ul class="dropdown-unduh ms-auto">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="unduhdropdownMenuLink"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Unduh
+              </a>
+              <ul class="dropdown-menu dropdown-menu-lg-end dropdown-unduh" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item dropdown-itemunduh" href="#">CSV</a>
+                </li>
+                <li>
+                  <a class="dropdown-item dropdown-itemunduh" href="#">API</a>
+                </li>
+              </ul>
           </ul>
         </div>
       </div>
@@ -233,20 +257,26 @@
             <a class="cont-dt" href="#"><i class="fas fa-eye"></i> Pratinjau</a>
             <a href="#" class="cont-dt"><i class="far fa-clock "></i> 6 Bulan yang lalu</a>
         </div>
-        <div class="dropdown">
-          <a
-            class="btn dropdown-toggle"
-            href="#"
-            role="button"
-            id="dropdownMenuLink"
-            data-mdb-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Unduh
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="#">CSV</a></li>
-            <li><a class="dropdown-item" href="#">API</a></li>
+        <div class="dropdown" id="dd-unduh">
+          <ul class="dropdown-unduh ms-auto">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="unduhdropdownMenuLink"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Unduh
+              </a>
+              <ul class="dropdown-menu dropdown-menu-lg-end dropdown-unduh" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item dropdown-itemunduh" href="#">CSV</a>
+                </li>
+                <li>
+                  <a class="dropdown-item dropdown-itemunduh" href="#">API</a>
+                </li>
+              </ul>
           </ul>
         </div>
       </div>
@@ -263,20 +293,26 @@
             <a class="cont-dt" href="#"><i class="fas fa-eye"></i> Pratinjau</a>
             <a href="#" class="cont-dt"><i class="far fa-clock "></i> 6 Bulan yang lalu</a>
         </div>
-        <div class="dropdown">
-          <a
-            class="btn dropdown-toggle"
-            href="#"
-            role="button"
-            id="dropdownMenuLink"
-            data-mdb-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Unduh
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="#">CSV</a></li>
-            <li><a class="dropdown-item" href="#">API</a></li>
+        <div class="dropdown" id="dd-unduh">
+          <ul class="dropdown-unduh ms-auto">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="unduhdropdownMenuLink"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Unduh
+              </a>
+              <ul class="dropdown-menu dropdown-menu-lg-end dropdown-unduh" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item dropdown-itemunduh" href="#">CSV</a>
+                </li>
+                <li>
+                  <a class="dropdown-item dropdown-itemunduh" href="#">API</a>
+                </li>
+              </ul>
           </ul>
         </div>
       </div>
@@ -293,20 +329,26 @@
             <a class="cont-dt" href="#"><i class="fas fa-eye"></i> Pratinjau</a>
             <a href="#" class="cont-dt"><i class="far fa-clock "></i> 6 Bulan yang lalu</a>
         </div>
-        <div class="dropdown">
-          <a
-            class="btn dropdown-toggle"
-            href="#"
-            role="button"
-            id="dropdownMenuLink"
-            data-mdb-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Unduh
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="#">CSV</a></li>
-            <li><a class="dropdown-item" href="#">API</a></li>
+        <div class="dropdown" id="dd-unduh">
+          <ul class="dropdown-unduh ms-auto">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="unduhdropdownMenuLink"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Unduh
+              </a>
+              <ul class="dropdown-menu dropdown-menu-lg-end dropdown-unduh" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item dropdown-itemunduh" href="#">CSV</a>
+                </li>
+                <li>
+                  <a class="dropdown-item dropdown-itemunduh" href="#">API</a>
+                </li>
+              </ul>
           </ul>
         </div>
       </div>
@@ -337,120 +379,98 @@
   <!--::: End Section Pagination :::-->
 
   <!--::: Section FOOTER :::-->
-  <section class="footeer">
-    <!-- Footer -->
-    <footer class="bg-footer">
-      <!-- Grid container -->
-      <div class="container p-4">
-        <!--Grid row-->
-        <div class="row boxfoot">
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <a class="navbar-brand" href="#"><img src="assets/image/logo.png" alt="" width="70" height="59" class="d-inline-block align-text-top"></a>
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="tuppercase">Open Data Bandung</h5>
-  
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="twhite">Tentang Kami</a>
-              </li>
-              <li>
-                <a href="#!" class="twhite">Kebijakan Privasi</a>
-              </li>
-              <li>
-                <a href="#!" class="twhite">Bantuan</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="tuppercase">Atribusi</h5>
-  
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!" class="twhite">CKAN</a>
-              </li>
-              <li>
-                <a href="#!" class="twhite">Open Knowledge Foundation</a>
-              </li>
-              <li>
-                <a href="#!" class="twhite">Flourish Studio</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
+  <footer class="text-center text-lg-start text-white" style="position:relative; background-color: #F0EEEE;">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+    <!-- Section: Links -->
+    <section class="">
+    <!--Grid row-->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-6 col-xl-3 mx-auto mt-3 mb-4 mb-md-0">
+        <a class="navbar-brand" href="#"><img src="assets/image/logo.png" alt="" width="70" height="59" class="d-inline-block align-text-top"></a>
+      </div>
+      <!-- Grid column -->
 
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="tuppercase">Aplikasi Turunan</h5>
-  
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!" class="twhite">ARIMBI</a>
-              </li>
-              <li>
-                <a href="#!" class="twhite">Bandung City Dashboard</a>
-              </li>
-              <li>
-                <a href="#!" class="twhite">Portal APBD Kota Bandung</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
+      <hr class="w-100 clearfix d-md-none" />
 
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="tuppercase">Pengembang</h5>
-  
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!" class="twhite">Monitoring dan Evaluasi</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mt-3">
+        <h6 class="text-black mb-4 font-weight-bold" style="font-weight: 700;">Alamat</h6>
+        <p>
+          <a class="text-black">Jl. Wastukencana No.2, Babakan Ciamis, Kec. Sumur Bandung, Kota Bandung, Jawa Barat 40117</a>
+        </p>
+        <p>
+      </div>
 
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="tuppercase">Temukan Kami</h5>
-  
-            <ul class="list-unstyled">
-              <li>
-                <a class="twhite" href="#!"><i class="fab fa-google"></i> bdg.data</a>
-              </li>
-              <li>
-                <a class="twhite" href="#!"><i class="fab fa-instagram"></i> data@bandung.go.id</a>
-              </li>
-            </ul>
-          </div>
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mt-3">
+        <h6 class="text-black mb-4 font-weight-bold" style="font-weight: 700;">Open Data Kota Bandung</h6>
+        <p>
+          <a href="#" class="text-black">Tentang Kami</a>
+        </p>
+        <p>
+          <a href="#" class="text-black">Kebijakan Privasi</a>
+        </p>
+        <p>
+          <a href="#" class="text-black">Bantuan</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none" />
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mt-3">
+        <h6 class="text-black mb-4 font-weight-bold" style="font-weight: 700;">
+          Atribusi
+        </h6>
+        <p>
+          <a href="#!"><i class="fab fa-google"></i> bdg.data</a>
+        </p>
+        <p>
+          <a href="#!"><i class="fab fa-instagram"></i> data@bandung.go.id</a>
+        </p>
+      </div>
+
+      <!-- Grid column 
+      <hr class="w-100 clearfix d-md-none" />
+      Grid column -->
+    </div>
+    <!--Grid row-->
+    <div class="row">
+      <div class="col-md-12 col-lg-12 col-xl-12 mx-auto" style="padding: 0px;">
+        <div class="mt-4">
+          <a href="#" type="button" class="btn btn-floating btn-lg" style="background: url(assets/image/mitra.png); color:#D9D9D9; border-radius: 5px 5px;"></i></a>
+          <a href="#" type="button" class="btn btn-floating btn-lg" style="background: url(assets/image/mitra.png); color:#D9D9D9; border-radius: 5px 5px;"></i></a>
+          <a href="#" type="button" class="btn btn-floating btn-lg" style="background: url(assets/image/mitra.png); color:#D9D9D9; border-radius: 5px 5px;"></i></a>
         </div>
-        <!--Grid row-->
       </div>
-      <!-- Grid container -->
+    </div>
+    </section>
+    <!-- Section: Links -->
 
-      <!-- Column Mitra -->
-      <div class="grid klmitra">
-        <div class="g-col-6 g-col-md-4"></div>
-        <div class="g-col-6 g-col-md-4"></div>
-        <div class="g-col-6 g-col-md-4"></div>
+    <hr class="my-3">
+
+    <!-- Section: Copyright -->
+    <section class="p-3 pt-0">
+    <div class="row d-flex align-items-center">
+      <!-- Grid column -->
+      <div class="col-ms text-center ">
+        <!-- Copyright -->
+        <div class="text-black p-3">
+          © 2020 Copyright
+          Portal Data Kota Bandung 2022. All rights reserved
+        </div>
+        <!-- Copyright -->
       </div>
-      <!-- Column Mitra -->
-  
-      <!-- Copyright -->
-      <div class="tcenter p-3">
-        © 2020 Copyright
-        Portal Data Kota Bandung 2022. All rights reserved
-      </div>
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
-  </section>
+      <!-- Grid column -->
+    </div>
+    </section>
+    <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
   <!--::: End Section FOOTER :::-->
 
     <!-- End your project here-->
