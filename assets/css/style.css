@@ -422,14 +422,14 @@ span.carousel-control-next-icon {
 .vector3{
     position: absolute;
     right: 0px;
-    top: 180%;
+    top: 1100px;
     z-index: -1;
     width: 280px;
 }
 
 @media only screen and (max-width: 600px) {
     .vector3 {
-      top: 230%;
+      top: 1920px;
       width: 35%;
     }
 }
@@ -443,7 +443,7 @@ span.carousel-control-next-icon {
 
 @media only screen and (max-width: 600px) {
     .vectorsekt {
-      top: 310%;
+      top: 2820px;
       width: 35%;
     }
 }
@@ -523,7 +523,7 @@ span.carousel-control-next-icon {
 
 @media only screen and (max-width: 600px) {
     .vector4 {
-      top: 1650px;
+      top: 2170px;
       width: 35%;
     }
 }
@@ -681,7 +681,7 @@ a.hvr:hover{
 
 @media only screen and (max-width: 600px) {
     .vectorflex {
-      top: 100%;
+      top: 1110px;
       width: 35%;
     }
 }
@@ -847,7 +847,7 @@ ul.nav-h{
 
 @media only screen and (max-width: 600px) {
     .vectorlhtdtset {
-      top: 310%;
+      top: 2690px;
       width: 35%;
     }
 }
