@@ -1032,4 +1032,148 @@ nav ul.pagination li.page-item a.page-link:hover:not(.active){
     height: auto;
 }
 
+.desc1 {
+    font-size: 29px;
+    text-align: left; 
+    color: black;
+    font-weight: 600;
+    line-height: 48px;
+    padding-left: 20px;
+}
+
+.desc2 {
+    font-size: 20px;
+    text-align: left; 
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    line-height: 48px;
+    font-weight: 400;
+    padding-left: 22px;
+}
+
+.desc3 {
+    font-size: 20px;
+    text-align: left; 
+    color: black;
+    padding-top: -20px;
+    padding-bottom: 35px;
+    line-height: 28px;
+    font-weight: 400;
+    padding-left: 22px;
+}
+
+.desc4 {
+  font-size: 20px;
+    text-align: left; 
+    color: black;
+    padding-top: -20px;
+    padding-bottom: 35px;
+    line-height: 28px;
+    font-weight: 400;
+    padding-left: 22px;
+
+}
+
+/* Struktur organisasi */
+#struktur_organisasi {
+    width: 100px;
+    margin: auto;
+    margin-top: 8%;
+    position: relative;
+    height: 100px;
+  }
+  
+  .organisasi-title-card {
+    text-align: center;
+    font-size: 16px;
+    height: 80px;
+  }
+  
+  .img-desc {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(98, 98, 98, 0.9);
+    border-radius: 5%;
+    z-index: -1;
+    transition: all 0.5 ease-in; 
+    font-size: 16px;
+    padding-bottom: 56px;
+  }
+  
+  .img-desc p,h10 {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 16px;
+  }
+
+  section.decsription {
+    margin-top: 160px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.bg-transparent.scrolled {
+    background: #FFFF !important;
+    shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .card:hover .img-desc {
+    top: 0;
+    z-index: 2;
+    transition: all 0.5s ease-out;
+    font-size: 16px;
+  }
+  
+  .button {
+    background-color: #B0DEFF;
+    border: none;
+    color: #ffff;
+    padding: 3px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  
+  .tombol-dataset {
+    margin-top: 10%;
+  }
+  
+  .vectororg{
+    position: absolute;
+    right: 0px;
+    top: 500px;
+    z-index: -1;
+  }
+
+  /* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    margin: auto;
+    
+  }
+  
+.column.kolom1{
+    width: 270px;
+    margin-top: 62px;
+}
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -6px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 /* ....!:::::::::: END HALAMAN LIHAT DATASET ORGANISASI ::::::::::!....*/
