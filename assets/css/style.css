@@ -1146,13 +1146,34 @@ nav ul.pagination li.page-item a.page-link:hover:not(.active){
   .tombol-dataset {
     margin-top: 10%;
   }
+
+.vectorawalor{
+    position: absolute;
+    left: 0px;
+    top: 170px;
+    z-index: -1;
+    width: 170px;
+}
+
+@media only screen and (max-width: 600px) {
+    .vectorawalor {
+      width: 40% ;
+    }
+}
   
-  .vectororg{
+.vectororg{
     position: absolute;
     right: 0px;
     top: 500px;
     z-index: -1;
-  }
+    width: 240px;
+}
+
+@media only screen and (max-width: 600px) {
+    .vectororg {
+      width: 40% ;
+    }
+}
 
   /* Float four columns side by side */
 .column {
