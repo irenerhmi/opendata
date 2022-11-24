@@ -1,4 +1,19 @@
+/* ===================
+   Template Open Data Kota Bandung
+   CSS Index
+   ===================
+   
+   :: Body 
+   :: Navigation Bar dan Footer
+   :: Halaman Home
+   :: Halaman Data Sektoral
+   :: Halaman Turunan Data Sektoral
+   :: Halaman Dataset
+   :: Halaman Lihat Dataset Organisasi
+   
+   ===================== */
 
+/* ....!:::::::::: START BODY ::::::::::!....*/
 body {
     background-image: url("../image/vector.png");
     background-repeat: no-repeat;
@@ -18,9 +33,10 @@ body {
     padding-left: 50px !important;
     padding-right: 50px !important;
 }
+/* ....!:::::::::: END BODY ::::::::::!....*/
 
-/* :::::::::::::: START NAVIGATION ::::::::::::::*/
-
+/* ....!:::::::::: START NAVIGATION BAR & FOOTER ::::::::::!....*/
+/* :::::::::::::: START NAVIGATION BAR ::::::::::::::*/
 nav.navbar {
     padding-left: 35px;
     padding-right: 27px;
@@ -48,19 +64,94 @@ nav .navbar-nav li a:hover, nav .navbar-nav li a:visited {
     color: black;
 }
 
-/* :::::::::::::: END NAVIGATION ::::::::::::::*/
+.bg-transparent.scrolled {
+    background: #FFFF !important;
+    shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
-/* ....!:::::::::: START HALAMAN DASHBOARD ::::::::::!....*/
+@media only screen and (max-width: 600px) {
+    nav.navbar{
+      background-color: #FFFF !important;
+    }
+}
+/* :::::::::::::: END NAVIGATION BAR ::::::::::::::*/
+
+/* :::::::::::::: START FOOTER ::::::::::::::*/
+section.footeer{
+    padding-top: 20px;
+    margin-left: -55px;
+    margin-right: -30px;
+}
+
+.row a.navbar-brand img{
+    margin-left: -55px;
+}
+
+.row .col-lg-6{
+    width: 10%;
+}
+
+.row .col-lg-3{
+    width: 18%;
+}
+
+.footeer .bg-footer{
+    
+}
+
+.bg-footer h5.tuppercase{
+    color: #000000;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.bg-footer li a.twhite{
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.bg-footer .tcenter{
+    color: #000000;
+    text-align: center;
+}
+
+.klmitra{
+    display: grid;
+    row-gap: 0px;
+    grid-template-columns: auto auto auto;
+    background-color: none;
+    padding: 0px;
+    width: 250px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+
+.klmitra .g-col-6{
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    text-align: center;
+    margin-inline: 0px;
+    width: 70px;
+    height: 70px;
+}
+
+@media only screen and (max-width: 1044px) {
+    .footeer{
+        width: 700px;
+    }
+}
+
+/* :::::::::::::: END FOOTER ::::::::::::::*/
+/* ....!:::::::::: END NAVIGATION BAR & FOOTER ::::::::::!....*/
+
+/* ....!:::::::::: START HALAMAN HOME::::::::::!....*/
 /* :::::::::::::: START SECTION DESCRIPTION ::::::::::::::*/
 
 section.decsription {
     margin-top: 200px;
     margin-bottom: 50px;
-}
-
-.bg-transparent.scrolled {
-    background: #FFFF !important;
-    shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .descawal {
@@ -275,7 +366,7 @@ section.decsription {
     justify-content: center;
 }
 
-.card img {
+.cardhl img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -284,12 +375,12 @@ section.decsription {
     text-align: center;
 }
 
-.card {
+.cardhl {
     margin-right: 10px;
     margin-left: 10px;
 }
 
-.card:hover {
+.cardhl:hover {
     background-color: #B0DEFF;
 }
 
@@ -324,77 +415,7 @@ span.carousel-control-next-icon {
     margin-left: auto;
 }
 /* :::::::::::::: END SECTION HIGHLIGHT DATA ::::::::::::::*/
-
-/* :::::::::::::: START FOOTER ::::::::::::::*/
-section.footeer{
-    padding-top: 20px;
-    margin-left: -55px;
-    margin-right: -30px;
-}
-
-.row a.navbar-brand img{
-    margin-left: -55px;
-}
-
-.row .col-lg-6{
-    width: 10%;
-}
-
-.row .col-lg-3{
-    width: 18%;
-}
-
-.footeer .bg-footer{
-    
-}
-
-.bg-footer h5.tuppercase{
-    color: #000000;
-    text-transform: capitalize;
-    font-weight: 600;
-    font-size: 16px;
-}
-
-.bg-footer li a.twhite{
-    color: #000000;
-    text-transform: capitalize;
-    font-size: 16px;
-}
-
-.bg-footer .tcenter{
-    color: #000000;
-    text-align: center;
-}
-
-.klmitra{
-    display: grid;
-    row-gap: 0px;
-    grid-template-columns: auto auto auto;
-    background-color: none;
-    padding: 0px;
-    width: 250px;
-    margin-left: 70px;
-    margin-bottom: 20px;
-}
-
-.klmitra .g-col-6{
-    background-color: #D9D9D9;
-    border-radius: 10px;
-    text-align: center;
-    margin-inline: 0px;
-    width: 70px;
-    height: 70px;
-}
-
-@media only screen and (max-width: 1044px) {
-    .footeer{
-        width: 700px;
-    }
-}
-
-/* :::::::::::::: END FOOTER ::::::::::::::*/
-
-/* ....!:::::::::: END HALAMAN DASHBOARD ::::::::::!....*/
+/* ....!:::::::::: END HALAMAN HOME::::::::::!....*/
 
 /* ....!:::::::::: START HALAMAN DATA SEKTORAL ::::::::::!....*/
 .sekt {
@@ -517,11 +538,9 @@ section.footeer{
       width: 35%;
     }
 }
-
-/* ....!:::::::::: END DATA SEKTORAL PAGE ::::::::::!....*/
+/* ....!:::::::::: END HALAMAN DATA SEKTORAL ::::::::::!....*/
 
 /* ....!:::::::::: START HALAMAN TURUNAN DATA SEKTORAL ::::::::::!....*/
-
 /* :::::::::::::: START SECTION APP TURUNAN ::::::::::::::*/
 .card-t{
     border-radius: 20px;
@@ -597,17 +616,10 @@ section.footeer{
       width: 35%;
     }
 }
-
-
-
-
+/* :::::::::::::: END SECTION APP TURUNAN ::::::::::::::*/
 /* ....!:::::::::: END HALAMAN TURUNAN DATA SEKTORAL ::::::::::!....*/
 
-
-/* :::::::::::::: END SECTION APP TURUNAN ::::::::::::::*/
-
 /* ....!:::::::::: START HALAMAN DATASET ::::::::::!....*/
-
 /* :::::::::::::: START SECTION Total Data dan Filter ::::::::::::::*/
 .tdata {
     padding-top: 10px;
@@ -936,9 +948,7 @@ section.pagin{
 }
 
 nav .pagination{
-    padding-bottom: 20px;
-    position: absolute;
-    left: 45%;
+    padding-bottom: 10px;
 }
 
 nav ul.pagination li.page-item a.page-link{
@@ -946,12 +956,11 @@ nav ul.pagination li.page-item a.page-link{
     font-weight: 600;
 }
 
-nav ul.pagination li.page-item a.page-link:hover:not(.active){
+ul.pagination li.page-item a.page-link:hover:not(.active){
     background-color: #B0DEFF;
 }
 
 /* :::::::::::::: END SECTION PAGINATION ::::::::::::::*/
-
 /* ....!:::::::::: END HALAMAN DATASET ::::::::::!....*/
 
 /* ....!:::::::::: START HALAMAN LIHAT DATASET ORGANISASI ::::::::::!....*/
@@ -1115,11 +1124,6 @@ nav ul.pagination li.page-item a.page-link:hover:not(.active){
     font-weight: 600;
     color: black;
 }
-
-.bg-transparent.scrolled {
-    background: #FFFF !important;
-    shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
   
   .card:hover .img-desc {
     top: 0;
@@ -1198,3 +1202,131 @@ nav ul.pagination li.page-item a.page-link:hover:not(.active){
     clear: both;
   }
 /* ....!:::::::::: END HALAMAN LIHAT DATASET ORGANISASI ::::::::::!....*/
+
+/* ....!:::::::::: START HALAMAN PRATINJAU DATA ::::::::::!....*/
+/* :::::::::::::: START SECTION Informasi Data ::::::::::::::*/
+.jdrekdata {
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 39px;
+    color: #000;
+    padding-bottom: 25px;
+}
+
+.descpra {
+    font-size: 29px;
+    text-align: left;
+    color: black;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.infopra {
+    display: flex !important;
+}
+
+.infopra h5 {
+    font-weight: 400;
+    line-height: 24px;
+    color: #000;
+    font-size: 20px;
+}
+
+.klmdata {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    color: #000000;
+    padding-right: 5px;
+}
+/* :::::::::::::: END SECTION Informasi Data ::::::::::::::*/
+
+/* :::::::::::::: START SECTION Table Data ::::::::::::::*/
+.tbdata {
+    max-height: 400px;
+    overflow: auto;
+    display:inline-block;
+}
+
+.tbdata table {
+    border-radius: 20px !important;
+    border-spacing: 0px;
+}
+
+.tbdata table th, td {
+    font-weight: 400;
+    line-height: 36px;
+    color: #000000;
+}
+
+.has-search2 {
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .has-search2 {
+      width: 70% !important;
+      padding: 0px !important;
+
+    }
+}
+  
+.has-search2 .form-control {
+    padding-right: 2.375rem;
+    border: 2px solid #000000; 
+    border-radius: 40px;
+}
+  
+.has-search2 .form-control-feedback2 {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    color: #000000;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    border: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    .has-search2 .form-control-feedback2 {
+      width: 50% !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .has-search2 .form-control-feedback2 {
+      width: 70% !important;
+      padding: 0px !important;
+      padding-left: 50% !important;   
+    }
+}
+/* :::::::::::::: END SECTION Table Data ::::::::::::::*/
+
+/* :::::::::::::: START SECTION Rekomendasi Dataset ::::::::::::::*/
+.rekdata {
+    margin-bottom: 30px;
+}
+
+.rekcdt {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.rekdsdt {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 36px;
+    color: #000000;
+}
+/* :::::::::::::: END SECTION Rekomendasi Dataset ::::::::::::::*/
+/* ....!:::::::::: END HALAMAN PRATINJAU DATA ::::::::::!....*/
