@@ -47,7 +47,7 @@ nav.navbar {
 }
 
 nav .navbar-nav li a.dropdown-item:hover {
-    color: #B0DEFF;
+    color: #005288;
     background-color: #FFFF;
 }
 
@@ -151,7 +151,7 @@ section.footeer{
 
 section.decsription {
     margin-top: 200px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .descawal {
@@ -199,7 +199,7 @@ section.decsription {
     text-align: left; 
     color: black;
     padding-top: -20px;
-    padding-bottom: 35px;
+    padding-bottom: 23px;
     line-height: 28px;
     font-weight: 400;
     padding-left: 22px;
@@ -225,7 +225,7 @@ section.decsription {
 .has-search .form-control {
     padding-right: 2.375rem;
     border: 2px solid #000000; 
-    border-radius: 40px;
+    border-radius: 20px;
 }
   
 .has-search .form-control-feedback {
@@ -621,23 +621,57 @@ span.carousel-control-next-icon {
 
 /* ....!:::::::::: START HALAMAN DATASET ::::::::::!....*/
 /* :::::::::::::: START SECTION Total Data dan Filter ::::::::::::::*/
+.boxfilter {
+    display: inline;
+}
+
 .tdata {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .data {
     font-weight: 600;
-    font-size: 20px;
     line-height: 39px;
     color: #000;
-    padding-bottom: 30px;
     padding-left: 22px;
+    font-size: 18px;
 }
 
 .float-end{
     padding-top: 10px;
     padding-right: 27px;
+}
+
+.filterdt {
+    padding-right: 0px;
+}
+
+.filterdt .btn{
+    font-size: 16px;
+    font-weight: 550;
+    text-transform: capitalize;
+    color: #000000;
+    text-align: center;
+    background-color: #B0DEFF;
+    border-radius: 10px;
+    border: none;
+    width: auto;
+}
+
+.filterdt ul.dropdown-menu button.dropdown-item{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    text-align: right;
+}
+
+.filterdt ul.dropdown-menu button.dropdown-item:hover{
+    background-color: #B0DEFF;
+}
+
+.fdt {
+    padding-left: 8px;
 }
 
 .float-end .btn{
@@ -677,8 +711,22 @@ span.carousel-control-next-icon {
 
 .d-flex{
     justify-content: left;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-radius: 10px;
     /* width: 100px; */
+}
+
+.d-flex .lhtdt{
+    justify-content: left;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    /* width: 100px; */
+}
+
+.lhtdt:hover {
+    background-color: #F0EEEE!important;
 }
 
 .flex-shrink-0 {
@@ -696,21 +744,33 @@ span.carousel-control-next-icon {
 }
 
 .dttitle{
-    font-weight: 600;
     color: #000000;
     line-height: 24px;
     text-align: left;
     font-size: 20px;
+    font-weight: 600;
+}
+
+.dttitle2{
+    color: #000000;
+    line-height: 24px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .dttitle-dinas{
     font-weight: 500;
     margin-top: 15px;
-    font-weight: 600;
+    font-weight: 550;
     color: #000000;
-    line-height: 24px;
+    line-height: 22px;
     text-align: left;
-    font-size: 20px;
+    font-size: 25px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
 }
 
 .ket-dinas{
@@ -725,7 +785,12 @@ span.carousel-control-next-icon {
     line-height: 20px;
     font-weight: 400;
     text-align: left;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 .desk2{
@@ -734,6 +799,11 @@ span.carousel-control-next-icon {
     line-height: 19px;
     font-weight: 400;
     text-align: left;
+    margin-bottom: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 .hvr{
@@ -743,6 +813,14 @@ span.carousel-control-next-icon {
     padding-right: 18px
 }
 
+.hvr2 {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+}
+
 a.klmbtn{
     font-weight: 600;
     font-size: 20px;
@@ -750,8 +828,59 @@ a.klmbtn{
     padding-right: 18px
 }
 
+a.klmbtn1 {
+    pointer-events: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+    padding-right: 18px;
+    pointer-events: none !important;
+}
+
+a.klmbtn1:hover {
+    pointer-events: none !important;
+    color: black !important;
+}
+
 a.hvr:hover{
     color: #005288;
+}
+
+.hvr2:hover {
+    color: #005288;
+}
+
+.modal-body {
+    text-align: center;
+    
+}
+
+.modal-body img {
+    padding-top: 30px;
+}
+
+.texalert {
+    font-weight: 550;
+    font-size: 19px;
+    line-height: 36px;
+    color: #000000;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.btnalrt {
+    font-size: 16px;
+    font-weight: 550;
+    text-transform: capitalize;
+    color: #000000;
+    text-align: center;
+    background-color: #B0DEFF;
+    border-radius: 10px;
+    border: none;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .vectorflex{
@@ -779,11 +908,25 @@ a.hvr:hover{
     margin-left: 20px;
     z-index: 999;
 }
+
+.boxlhtdt {
+    padding: 0px;
+}
+
+.boxdescdt {
+    background: #B0DEFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
 /* :::::::::::::: END SECTION DESKRIPSI LIHAT DATASET ::::::::::::::*/
 
 /* :::::::::::::: START SECTION HASIL EVALUASI DATASET ::::::::::::::*/
 .content-dtset{
-    padding-bottom: 62px;
+    padding-bottom: 20px;
 }
 
 .card-h{
@@ -800,9 +943,44 @@ a.hvr:hover{
     background-color: white !important;
 }
 
+.card-h .card-header {
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+.table-responsive h2 {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 36px;
+    color: #000000;
+    padding-left: 22px;
+}
+
+.table-responsive h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    color: #000000;
+    padding-left: 22px;
+}
+
+.defdata {
+    margin-bottom: 20px;
+}
+
+.infordata {
+    margin-bottom: 20px;
+}
+
+.kamdata {
+    margin-bottom: 50px;
+}
+
 .titlehasil{
     color: #000000;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 48px;
 }
 
 ul.nav-h{
@@ -811,6 +989,13 @@ ul.nav-h{
     padding-left: 0;
     margin-top: 0;
     list-style: none;
+}
+
+.card-h2 {
+    padding-top: 25px !important;
+    border-bottom: none !important;
+    padding-left: 48px !important;
+    padding-bottom: 12px !important;
 }
 
 .card-header.ul{
@@ -824,9 +1009,11 @@ ul.nav-h{
 .nav-pills a.nav-link.actived{
     background-color: #fff !important;
     color: #000000;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     text-transform: capitalize;
+    padding: 0px;
+    margin-right: 45px;
 }
 
 .nav-pills a.nav-link.actived:hover{
@@ -860,9 +1047,34 @@ ul.nav-h{
 }
 
 .row-h{
-    padding-top: 10px;
+    padding-top: 15px;
     padding-left: 15px;
     color: #000000;
+    padding-left: 48px !important;
+    padding-bottom: 12px !important;  
+}
+
+.row-h .dtinfo {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+}
+
+.tbdata th:first-child {                 
+    border-top-left-radius: 10px; 
+}
+
+.tbdata th:last-child {          
+    border-top-right-radius: 10px; 
+}
+
+.tbdata td:last-child td:first-child { 
+    border-bottom-left-radius: 10px; 
+}
+
+.tbdata tr:last-child td:last-child { 
+    border-bottom-right-radius: 10px; 
 }
 
 /* :::::::::::::: END SECTION HASIL EVALUASI DATASET ::::::::::::::*/
@@ -873,22 +1085,50 @@ ul.nav-h{
 }
 
 .col.col-tags{
-    margin-left: 20px;
     border-radius: 20px;
     background-color: #B0DEFF;
     color: #000000;
     padding: 0px 20px ;
     font-size: 16px;
+    font-weight: 400;
+}
+
+.tagsdt {
+    background-color: #B0DEFF;
+    color: #000000 !important;
+
 }
 /* :::::::::::::: END SECTION TAGS ::::::::::::::*/
 
 /* :::::::::::::: START SECTION DATA DARI DATASET ::::::::::::::*/
+.tdatainfo {
+    border-collapse: separate;
+    border-spacing: 20px 0px !important;
+}
+
+.tdatainfo th{
+    margin-right: 10px;
+}
 .data-d {
+    padding-top: 20px;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 39px;
+    font-size: 1rem;
+    line-height: 12px;
     color: #000;
-    padding-left: 22px;
+    padding-left: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+}
+
+.data-d .tagstittle {
+    margin-bottom: 10px;
+}
+
+.data-d .col-tags {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 400;
 }
 
 .deskp{
@@ -897,12 +1137,35 @@ ul.nav-h{
     line-height: 20px;
     font-weight: 400;
     text-align: left;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 .cont-dt{
     font-size: 20px;
     color: #000;
     font-weight: 600;
     padding-right: 18px
+}
+
+.cont-dt1 {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    padding-right: 18px;
+    pointer-events: none !important;
+}
+
+a.cont-dt1:hover {
+    pointer-events: none !important;
+    color: black !important;
+}
+
+div #dd-unduh {
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 20px;
 }
 
 #unduhdropdownMenuLink{
@@ -914,20 +1177,20 @@ ul.nav-h{
     border-radius: 10px;
 }
 
-.dropdown ul.dropdown-unduh a.dropdown-itemunduh{
+.dropdown ul.dropdown-unduh button.dropdown-itemunduh{
     color: #000000;
     font-weight: 600;
     text-align: right;
 }
 
-.dropdown ul.dropdown-unduh a.dropdown-itemunduh:hover{
+.dropdown ul.dropdown-unduh button.dropdown-itemunduh:hover{
     background-color: #B0DEFF;
 }
 
 .vectorlhtdtset{
     position: absolute;
     right: 0px;
-    top: 1300px;
+    top: 1200px;
     z-index: -1;
 }
 
@@ -943,8 +1206,9 @@ ul.nav-h{
 /* :::::::::::::: START SECTION PAGINATION ::::::::::::::*/
 
 section.pagin{
+    padding-top: 20px;
     padding-left: 22px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 
 nav .pagination{
@@ -1207,10 +1471,15 @@ ul.pagination li.page-item a.page-link:hover:not(.active){
 /* :::::::::::::: START SECTION Informasi Data ::::::::::::::*/
 .jdrekdata {
     font-weight: 600;
-    font-size: 27px;
+    font-size: 23px;
     line-height: 39px;
     color: #000;
-    padding-bottom: 25px;
+}
+
+.consboxrek .col-sm-9 {
+    justify-content: space-around;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .descpra {
@@ -1239,6 +1508,20 @@ ul.pagination li.page-item a.page-link:hover:not(.active){
     color: #000000;
     padding-right: 5px;
 }
+
+button.klmdata {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    color: #000000;
+}
+
+button.klmdata2:hover {
+    color: #005288;
+}
 /* :::::::::::::: END SECTION Informasi Data ::::::::::::::*/
 
 /* :::::::::::::: START SECTION Table Data ::::::::::::::*/
@@ -1249,8 +1532,9 @@ ul.pagination li.page-item a.page-link:hover:not(.active){
 }
 
 .tbdata table {
-    border-radius: 20px !important;
+    border-radius: 10px !important;
     border-spacing: 0px;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
 }
 
 .tbdata table th, td {
