@@ -180,7 +180,9 @@ section.decsription {
     color: black;
     font-weight: 600;
     line-height: 48px;
-    padding-left: 20px;
+    pointer-events: none;
+    color: #000000;
+    pointer-events: none !important;
 }
 
 .descdtset2 {
@@ -191,7 +193,6 @@ section.decsription {
     padding-bottom: 0px;
     line-height: 48px;
     font-weight: 400;
-    padding-left: 22px;
 }
 
 .descdtset3 {
@@ -202,7 +203,6 @@ section.decsription {
     padding-bottom: 23px;
     line-height: 28px;
     font-weight: 400;
-    padding-left: 22px;
 }
 
 .has-search {
@@ -263,9 +263,9 @@ section.decsription {
 .vectordtset {
     position: absolute;
     z-index: -1;
-    left: -1px;
-    top: 115px;
-    width: 130px;
+    left: 0px;
+    top: 130px;
+    width: 105px;
   }
 
 @media only screen and (max-width: 600px) {
@@ -369,6 +369,7 @@ section.decsription {
 .cardhl img {
     max-width: 100%;
     max-height: 100%;
+    border-radius: 25px 25px 0px 0px !important;
 }
 
 .carousel-inner {
@@ -378,6 +379,8 @@ section.decsription {
 .cardhl {
     margin-right: 10px;
     margin-left: 10px;
+    border-radius: 25px !important;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%) !important;
 }
 
 .cardhl:hover {
@@ -565,16 +568,33 @@ span.carousel-control-next-icon {
     position: relative;
     border-radius: 8px;
   }
-  
+
   .img-desc {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(98, 98, 98, 0.9);
-    border-radius: 8px;
+    border-radius: 5%;
     z-index: -1;
     transition: all 0.5 ease-in; 
+    font-size: 16px;
     text-align: center;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .img-desc .texttrn{
+    color: #fff;
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden; 
+    margin-bottom: 10px;  
   }
 
   .text-t {
@@ -634,13 +654,11 @@ span.carousel-control-next-icon {
     font-weight: 600;
     line-height: 39px;
     color: #000;
-    padding-left: 22px;
     font-size: 18px;
 }
 
 .float-end{
     padding-top: 10px;
-    padding-right: 27px;
 }
 
 .filterdt {
@@ -706,7 +724,7 @@ span.carousel-control-next-icon {
 
 /* :::::::::::::: START SECTION Dataset Flexbox ::::::::::::::*/
 .dtset {
-    padding-left: 22px;
+    /*padding-left: 22px;*/
 }
 
 .d-flex{
@@ -787,6 +805,7 @@ span.carousel-control-next-icon {
     text-align: left;
     padding-bottom: 0px;
     margin-bottom: 8px;
+    margin-top: 5px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -821,6 +840,24 @@ span.carousel-control-next-icon {
     font-weight: 600;
 }
 
+.hvr3 {
+    border: none;
+    background-color: transparent;
+    font-size: 19px;
+    color: #000;
+    font-weight: 600;
+    line-height: 24px;
+    padding-left: 0px !important;
+    padding-right: 15px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.klmbtn2:hover {
+    pointer-events: none !important;
+    color: black !important;
+}
+
 a.klmbtn{
     font-weight: 600;
     font-size: 20px;
@@ -847,6 +884,10 @@ a.hvr:hover{
 }
 
 .hvr2:hover {
+    color: #005288;
+}
+
+.hvr3:hover {
     color: #005288;
 }
 
@@ -954,26 +995,24 @@ a.hvr:hover{
     line-height: 36px;
     color: #000000;
     padding-left: 22px;
+    margin-bottom: 0px;
 }
 
 .table-responsive h3 {
     font-weight: 400;
     font-size: 16px;
-    line-height: 36px;
+    line-height: 25px;
     color: #000000;
     padding-left: 22px;
+    margin-bottom: 0px;
 }
 
 .defdata {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .infordata {
-    margin-bottom: 20px;
-}
-
-.kamdata {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .titlehasil{
@@ -1206,7 +1245,6 @@ div #dd-unduh {
 /* :::::::::::::: START SECTION PAGINATION ::::::::::::::*/
 
 section.pagin{
-    padding-top: 20px;
     padding-left: 22px;
     padding-bottom: 10px;
 }
@@ -1233,7 +1271,7 @@ ul.pagination li.page-item a.page-link:hover:not(.active){
     text-align: left; 
     color: black;
     padding-top: -20px;
-    padding-bottom: 35px;
+    margin-bottom: 25px;
     line-height: 24px;
     font-weight: 400;
     padding-left: 22px;
@@ -1241,7 +1279,7 @@ ul.pagination li.page-item a.page-link:hover:not(.active){
 }
 
 .pinky {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -1257,20 +1295,67 @@ ul.pagination li.page-item a.page-link:hover:not(.active){
 .colpink{
     text-align: center;
     border-radius: 20px;
-    padding: 0px !important;
-    padding-top: 10px !important;
+    padding-top: 20px !important;
+    padding-bottom: 10px !important;
     justify-content: center; 
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 
 
-.colpink:hover {
+.c1:hover {
     background-color: #B0DEFF !important;
     padding: 0px;
     margin: 0px;
-    border-radius: 20px;
+    border-radius: 20px 0px 0px 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.c2:hover {
+    background-color: #B0DEFF !important;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.c3:hover {
+    background-color: #B0DEFF !important;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .c1{
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .c2{
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .c3{
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .c1:hover {
+        border-radius: 20px 20px 0px 0px !important;
+    }
+
+    .c3:hover {
+        border-radius: 0px 0px 20px 20px !important;
+    }
 }
 
 .descdataset2 {
@@ -1311,7 +1396,6 @@ ul.pagination li.page-item a.page-link:hover:not(.active){
     color: black;
     font-weight: 600;
     line-height: 48px;
-    padding-left: 20px;
 }
 
 .desc2 {
@@ -1322,7 +1406,6 @@ ul.pagination li.page-item a.page-link:hover:not(.active){
     padding-bottom: 0px;
     line-height: 48px;
     font-weight: 400;
-    padding-left: 22px;
 }
 
 .desc3 {
@@ -1333,7 +1416,6 @@ ul.pagination li.page-item a.page-link:hover:not(.active){
     padding-bottom: 35px;
     line-height: 28px;
     font-weight: 400;
-    padding-left: 22px;
 }
 
 .desc4 {
@@ -1348,38 +1430,74 @@ ul.pagination li.page-item a.page-link:hover:not(.active){
 
 }
 
-/* Struktur organisasi */
-#struktur_organisasi {
-    width: 100px;
-    margin: auto;
-    margin-top: 8%;
+.col-o {
+    width: auto !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-o {
+    width: fit-content !important;
+    border-radius: 10px !important;
+    text-align: center !important;
     position: relative;
-    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Struktur organisasi */
+.struktur_organisasi {
+    width: 200px;
+    height: 200px !important;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid rgba(0,0,0,.125);
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
   }
   
+  .tittle-org {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
   .organisasi-title-card {
     text-align: center;
     font-size: 16px;
     height: 80px;
+    font-weight: 500;
+    color: #000000;
   }
   
-  .img-desc {
+  .img-desc2 {
     position: absolute;
-    width: 100%;
+    width: 200px;
     height: 100%;
     background-color: rgba(98, 98, 98, 0.9);
     border-radius: 5%;
     z-index: -1;
     transition: all 0.5 ease-in; 
     font-size: 16px;
-    padding-bottom: 56px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
-  
-  .img-desc p,h10 {
+
+  .img-desc2 p, h10{
     color: #fff;
     text-align: center;
     position: relative;
+    width: fit-content;
     font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden; 
+    margin-bottom: 10px;  
   }
 
   section.decsription {
@@ -1388,14 +1506,45 @@ ul.pagination li.page-item a.page-link:hover:not(.active){
     font-weight: 600;
     color: black;
 }
-  
+
   .card:hover .img-desc {
     top: 0;
     z-index: 2;
     transition: all 0.5s ease-out;
     font-size: 16px;
   }
+
+  .card-o .struktur_organisasi:hover .img-desc2 {
+    top: 0;
+    z-index: 2;
+    transition: all 0.5s ease-out;
+    font-size: 16px;
+}
+
+  .card:hover .img-desc2 {
+    top: 0;
+    z-index: 2;
+    transition: all 0.5s ease-out;
+    font-size: 16px;
+  }
   
+  .btnimg {
+    background-color: #B0DEFF;
+    border: none;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 550;
+    font-size: 14px;
+  }
+
   .button {
     background-color: #B0DEFF;
     border: none;
