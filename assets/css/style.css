@@ -192,7 +192,7 @@ section.decsription {
     padding-top: 10px;
     padding-bottom: 0px;
     line-height: 48px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .descdtset3 {
@@ -779,7 +779,6 @@ span.carousel-control-next-icon {
 
 .dttitle-dinas{
     font-weight: 500;
-    margin-top: 15px;
     font-weight: 550;
     color: #000000;
     line-height: 22px;
@@ -952,6 +951,7 @@ a.hvr:hover{
 
 .boxlhtdt {
     padding: 0px;
+    margin-top: 15px;
 }
 
 .boxdescdt {
@@ -1247,6 +1247,7 @@ div #dd-unduh {
 section.pagin{
     padding-left: 22px;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 nav .pagination{
@@ -1259,8 +1260,16 @@ nav ul.pagination li.page-item a.page-link{
 }
 
 ul.pagination li.page-item a.page-link:hover:not(.active){
-    background-color: #B0DEFF;
+    transition: .5s ease;
 }
+
+li.page-item {
+    background-color: #B0DEFF;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+
 
 /* :::::::::::::: END SECTION PAGINATION ::::::::::::::*/
 /* ....!:::::::::: END HALAMAN DATASET ::::::::::!....*/
@@ -1618,17 +1627,26 @@ ul.pagination li.page-item a.page-link:hover:not(.active){
 
 /* ....!:::::::::: START HALAMAN PRATINJAU DATA ::::::::::!....*/
 /* :::::::::::::: START SECTION Informasi Data ::::::::::::::*/
-.jdrekdata {
+.descdtset1-2 {
+    font-size: 29px;
+    text-align: left; 
+    color: black;
     font-weight: 600;
-    font-size: 23px;
-    line-height: 39px;
-    color: #000;
+    line-height: 48px;
+    pointer-events: none;
+    color: #000000;
+    pointer-events: none !important;
+    margin-left: 20px;
 }
 
-.consboxrek .col-sm-9 {
-    justify-content: space-around;
-    margin-top: auto;
-    margin-bottom: auto;
+.descdtset2-2 {
+    font-size: 27px;
+    text-align: left; 
+    color: black;
+    padding-bottom: 0px;
+    line-height: 48px;
+    font-weight: 600;
+    margin-left: 20px;
 }
 
 .descpra {
@@ -1666,6 +1684,10 @@ button.klmdata {
     font-size: 18px;
     line-height: 36px;
     color: #000000;
+}
+
+button.klmdata:hover {
+    color: #005288;
 }
 
 button.klmdata2:hover {
@@ -1760,6 +1782,19 @@ button.klmdata2:hover {
     font-size: 17px;
     line-height: 36px;
     color: #000000;
+}
+
+.jdrekdata {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 39px;
+    color: #000;
+}
+
+.consboxrek .col-sm-9 {
+    justify-content: space-around;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 /* :::::::::::::: END SECTION Rekomendasi Dataset ::::::::::::::*/
 /* ....!:::::::::: END HALAMAN PRATINJAU DATA ::::::::::!....*/
